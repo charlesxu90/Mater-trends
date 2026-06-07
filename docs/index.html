@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Materials Trends in Journals</title>
+  <meta name="description" content="Top, emerging, and fading research topics across the flagship materials-science journals (Nature, Science, Cell Press, Wiley, ACS, RSC, Elsevier) — by year, quarter, or month, from RSS plus historical backfill." />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-icon" href="assets/logo.png" />
+  <link rel="preload" href="data/manifest.json" as="fetch" crossorigin />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap site-head__inner">
+      <a class="brand" href="#top">
+        <img class="brand__logo" src="assets/logo.png" width="32" height="32" alt="" aria-hidden="true" />
+        <span class="brand__text">Materials&nbsp;Trends<span class="brand__dim">/journals</span></span>
+      </a>
+      <nav class="nav" aria-label="Sections">
+        <a href="#trends">Topic Trends</a>
+        <a href="#browse">Rising Stars</a>
+        <a class="nav__ext" href="https://github.com/charlesxu90/Mater-trends" rel="noopener">Source ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="sidenav" aria-label="Quick navigation">
+    <a href="#top" data-target="top"><span class="sidenav__dot"></span><span class="sidenav__label">Top</span></a>
+    <a href="#trends" data-target="trends"><span class="sidenav__dot"></span><span class="sidenav__label">Topic Trends</span></a>
+    <a href="#browse" data-target="browse"><span class="sidenav__dot"></span><span class="sidenav__label">Rising Stars</span></a>
+  </nav>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-h">
+      <div class="wrap hero__inner">
+        <div class="hero__text">
+          <p class="eyebrow">Nature · Science · Cell · Wiley · ACS · RSC &nbsp;—&nbsp; RSS + backfill</p>
+          <h1 id="hero-h" class="hero__title">
+            What <span class="hero__hl">materials&nbsp;science</span> is<br /><em>actually</em> publishing
+          </h1>
+          <p class="hero__lede">
+            Articles from the flagship materials-science journals across the major
+            publishers, auto-labelled by research topic and tracked <strong>year over year</strong>
+            (or by quarter and month). See which areas are <strong>top</strong>,
+            <strong>emerging</strong>, or <strong>fading</strong> — then read the papers
+            behind every trend.
+          </p>
+        </div>
+        <aside class="hero__panel" aria-label="Coverage at a glance">
+          <div class="hero__stats" id="hero-stats" aria-live="polite"></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="trends" aria-labelledby="trends-h">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 id="trends-h" class="section__title"><span class="section__num">01</span> Topic Trends</h2>
+          <p class="section__hint">Choose a granularity (year, quarter, or month), a journal, and a period. Click any topic to jump to its papers.</p>
+        </div>
+        <div class="picker" role="group" aria-label="Choose granularity, journal and period">
+          <div class="picker__group">
+            <span class="picker__label">Granularity</span>
+            <div class="picker__row" id="bucket-pills"></div>
+          </div>
+          <div class="picker__group">
+            <span class="picker__label">Journal</span>
+            <div class="picker__row" id="group-pills"></div>
+          </div>
+          <div class="picker__group">
+            <span class="picker__label" id="period-label">Period</span>
+            <div class="picker__row picker__row--periods" id="period-pills"></div>
+          </div>
+        </div>
+        <div id="trend-panel" class="trend-panel" aria-live="polite"></div>
+        <section id="topic-highlight" class="highlight" aria-label="Pinned topic" aria-live="polite" hidden></section>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="browse" aria-labelledby="browse-h">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 id="browse-h" class="section__title"><span class="section__num">02</span> Rising Stars</h2>
+          <p class="section__hint">Papers by journal, period, and topic — search titles and authors, sort by recency or citations. Click a topic in the trends above to see its papers for that period across all journals. Journals are ordered by impact factor.</p>
+        </div>
+        <form class="filters" id="filters" autocomplete="off" aria-label="Article filters">
+          <label class="field">
+            <span class="field__label">Journal</span>
+            <select id="f-journal" class="field__input"><option value="">All journals</option></select>
+          </label>
+          <label class="field">
+            <span class="field__label">Period</span>
+            <select id="f-period" class="field__input"><option value="">All periods</option></select>
+          </label>
+          <label class="field">
+            <span class="field__label">Topic</span>
+            <select id="f-topic" class="field__input"><option value="">All topics</option></select>
+          </label>
+          <label class="field">
+            <span class="field__label">Sort</span>
+            <select id="f-sort" class="field__input">
+              <option value="citations" selected>Most cited</option>
+              <option value="recent">Most recent</option>
+              <option value="rising">Rising (citation gain)</option>
+            </select>
+          </label>
+          <label class="field field--grow">
+            <span class="field__label">Search</span>
+            <input id="f-search" class="field__input" type="search" placeholder="title, author…" />
+          </label>
+        </form>
+        <p class="result-meta" id="result-meta" aria-live="polite"></p>
+        <ol class="papers" id="papers"></ol>
+        <div class="more" id="more-wrap" hidden>
+          <button class="btn" id="more-btn" type="button">Show more</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap site-foot__inner">
+      <p>Topic labels are assigned automatically against a curated materials-science taxonomy; trends are computed from article counts period over period (year, quarter, or month). Articles come from journal RSS feeds, with history backfilled from Crossref.</p>
+      <p class="site-foot__meta">Mater-trend · sibling of Bio-trend</p>
+    </div>
+  </footer>
+
+  <script src="assets/app.js" defer></script>
+</body>
+</html>

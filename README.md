@@ -1,18 +1,18 @@
 <h1>
-  <img src="docs/assets/logo.png" alt="Bio Trends logo" height="48" align="absmiddle" />
-  Bio Trends in Journals
+  <img src="docs/assets/logo.png" alt="Materials Trends logo" height="48" align="absmiddle" />
+  Materials Trends in Journals
 </h1>
 
-Track what biology is *actually* publishing. **Mater-trend** ingests recent articles
-from the flagship biology journals and their sister titles via **RSS**, auto-labels
-each with research topics, and surfaces the **top**, **emerging**, and **fading**
-areas month over month — with the papers behind every trend a click away.
+Track what materials science is *actually* publishing. **Mater-trend** ingests recent
+articles from the flagship materials-science journals via **RSS**, auto-labels each
+with research topics, and surfaces the **top**, **emerging**, and **fading** areas
+month over month — with the papers behind every trend a click away.
 
-It is the biology sibling of [AI-trend](../AI-trend/) and reuses its
-proven, deterministic pipeline; only the ingestion layer is different (RSS feeds
-instead of conference paper dumps).
+It is the materials-science sibling of [Bio-trend](../Bio-trend/) and reuses its
+proven, deterministic pipeline; only the journal registry and topic taxonomy differ.
 
-Families: **Nature · Science · Cell Press** (flagships + key biology sister journals).
+Families: **Nature · Science · Cell Press · Wiley · ACS · RSC · Elsevier**
+(flagship materials titles across the major publishers).
 Feed catalog: **[Journal-RSS.md](Journal-RSS.md)**.
 
 ## What it does
@@ -33,11 +33,12 @@ Feed catalog: **[Journal-RSS.md](Journal-RSS.md)**.
 The only non-deterministic step is **topic curation** (deciding which keywords map
 to which topic); everything else is pure, reproducible Python.
 
-The biology taxonomy (`config/taxonomy.json`, 33 topics) is **derived from the
-literature**: scispaCy NER over the ~59k-title corpus surfaces candidate keywords
+The materials-science taxonomy (`config/taxonomy.json`, 33 topics) is **seeded by
+hand** to cover the major research themes (batteries, photovoltaics, 2D materials,
+catalysis, quantum materials, …) and is **expandable from the literature**: spaCy
+NER over the accumulated title corpus surfaces candidate keywords
 (`mat-trend candidates`), the `/curate-topics` skill decides each
-(existing / new / noise / other), and `mat-trend curate` folds them in — the same
-extraction→curation loop as AI-trend.
+(existing / new / noise / other), and `mat-trend curate` folds them in.
 
 ## How it works
 
@@ -45,7 +46,7 @@ extraction→curation loop as AI-trend.
 Journal-RSS.md ──▶ ingest (poll feeds) ──▶ assign topics ──▶ trends ──▶ static site
 (config/journals.json) (data/<key>/<YYYY-MM>.csv)  (substring   (docs/, GitHub Pages)
                         accumulate + dedup by DOI    match vs
-                                                     biology taxonomy)
+                                                     materials taxonomy)
 ```
 
 RSS feeds are a **rolling window** (latest issue / recent items). Mater-trend polls
@@ -83,19 +84,19 @@ PYTHONNOUSERSITE=1 ./env/bin/mat-trend <command>
 | `check-feeds [--check]` | List tracked feeds (with frequency); `--check` probes each over the network |
 | `ingest [--journal KEY] [--force]` | Poll feeds that are *due* per their frequency; accumulate into `data/<key>/<YYYY-MM>.csv` |
 | `backfill --years 2024,2025 [--journal KEY]` | Fetch historical articles from Crossref into the same store |
-| `assign <csv>` | Assign biology topics to a papers CSV (deterministic) |
+| `assign <csv>` | Assign materials topics to a papers CSV (deterministic) |
 | `trends [--bucket year\|quarter\|month] [--group-by journal\|family]` | Compute top/emerging/fading |
-| `candidates <csv>` | Extract candidate keywords (scispaCy) for taxonomy curation |
+| `candidates <csv>` | Extract candidate keywords (spaCy NER) for taxonomy curation |
 | `curate <decision.json>` | Apply a curation decision to the taxonomy |
 | `citations [--journal KEY] [--years ...]` | Track Crossref citation counts per paper (snapshot on addition + monthly for 3 months) |
 | `export-site` | Rebuild the GitHub Pages data (`docs/data/`) |
 | `refresh [--no-ingest]` | Full pipeline: ingest → assign → trends → export-site |
 
 Natural-language front doors (Claude Code skills): **`/add-journal`** (paste a feed
-URL), **`/curate-topics`** (biology taxonomy curation), **`/track-journals`**
-(verify feeds, discover new bio sister journals, poll & ingest).
+URL), **`/curate-topics`** (materials taxonomy curation), **`/track-journals`**
+(verify feeds, discover new materials journals, poll & ingest).
 
-### Setup (Python 3.10)
+### Setup (Python 3.10+)
 
 ```bash
 conda create -y -p ./env python=3.10
@@ -103,18 +104,17 @@ PYTHONNOUSERSITE=1 ./env/bin/pip install -e .
 # optional extras:
 #   '.[citations]' / '.[backfill]'  requests (citation counts / Crossref backfill)
 #   '.[dev]'                        pytest + coverage
-#   '.[curate]'                     scispaCy NER for keyword extraction; also install the model:
+#   '.[curate]'                     spaCy NER for keyword extraction; also install the model:
 PYTHONNOUSERSITE=1 ./env/bin/pip install -e '.[curate]'
-PYTHONNOUSERSITE=1 ./env/bin/pip install \
-  "https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.1/en_core_sci_lg-0.5.1.tar.gz"
+PYTHONNOUSERSITE=1 ./env/bin/python -m spacy download en_core_web_lg
 ```
 
-### Re-deriving the taxonomy from the corpus
+### Expanding the taxonomy from the corpus
 
 ```bash
-# 1. extract candidate keywords from all titles (scispaCy NER)
+# 1. extract candidate keywords from accumulated titles (spaCy NER)
 PYTHONNOUSERSITE=1 ./env/bin/mat-trend candidates <all-titles.csv> \
-  --model en_core_sci_lg --threshold 40 -o /tmp/candidates.json
+  --model en_core_web_lg --threshold 40 -o /tmp/candidates.json
 # 2. run the /curate-topics skill to decide each candidate -> /tmp/decision.json
 # 3. apply, then re-assign + re-trends + re-export
 PYTHONNOUSERSITE=1 ./env/bin/mat-trend curate /tmp/decision.json

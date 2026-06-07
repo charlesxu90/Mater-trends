@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mat-trend"
+version = "0.1.0"
+description = "Automated topic assignment and trend analysis for materials-science journal RSS feeds"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=2",
+    "feedparser>=6.0",
+    "python-dateutil>=2.8",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "pytest-cov"]
+# `mat-trend candidates` (spaCy NER). Install the general English model separately:
+#   python -m spacy download en_core_web_lg
+curate = ["spacy>=3.7"]
+citations = ["requests>=2.28"]  # `mat-trend citations` (Semantic Scholar / OpenAlex)
+backfill = ["requests>=2.28"]   # `mat-trend backfill` (Crossref)
+
+[project.scripts]
+mat-trend = "mat_trend.cli:main"
+
+[tool.setuptools]
+packages = ["mat_trend"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

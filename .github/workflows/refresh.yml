@@ -1,0 +1,63 @@
+name: Monthly Mater-trend refresh
+
+on:
+  schedule:
+    - cron: "0 6 1 * *"   # 1st of each month, 06:00 UTC
+  workflow_dispatch:
+    inputs:
+      check:
+        description: "Probe feeds for liveness before refreshing"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e '.[citations]'
+
+      - name: Check feeds
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.check }}
+        run: mat-trend check-feeds --check || echo "::warning::some feeds unreachable; continuing"
+
+      - name: Ingest (poll RSS feeds)
+        run: mat-trend ingest
+
+      - name: Track citations (snapshot on addition + monthly for 3 months)
+        run: mat-trend citations || echo "::warning::citations step failed; continuing"
+
+      - name: Build (assign -> trends -> export-site)
+        run: mat-trend refresh --no-ingest
+
+      - name: Open PR
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: auto/monthly-refresh
+          delete-branch: true
+          commit-message: "chore: monthly Mater-trend data refresh"
+          title: "chore: monthly Mater-trend data refresh"
+          body: |
+            Automated monthly refresh: polled RSS feeds, tracked citation counts,
+            re-assigned topics, recomputed trends, and rebuilt the static site.
+          add-paths: |
+            config/**
+            docs/**
+            citations/**
+            Journal-RSS.md

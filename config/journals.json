@@ -1,0 +1,745 @@
+{
+  "journals": [
+    {
+      "key": "nat-rev-mater",
+      "label": "Nature Reviews Materials",
+      "family": "Nature",
+      "impact_factor": 79.8,
+      "frequency": "monthly",
+      "openalex": "S2764917516",
+      "issn": "2058-8437",
+      "feeds": [
+        {
+          "url": "https://www.nature.com/natrevmats.rss",
+          "type": "journal",
+          "focus": "high"
+        }
+      ]
+    },
+    {
+      "key": "nature",
+      "label": "Nature",
+      "family": "Nature",
+      "impact_factor": 50.5,
+      "frequency": "weekly",
+      "openalex": "S137773608",
+      "issn": "0028-0836",
+      "feeds": [
+        {
+          "url": "https://www.nature.com/subjects/materials-science.rss",
+          "type": "subject",
+          "focus": "high"
+        },
+        {
+          "url": "https://www.nature.com/nature.rss",
+          "type": "journal",
+          "focus": "mixed"
+        }
+      ]
+    },
+    {
+      "key": "nat-energy",
+      "label": "Nature Energy",
+      "family": "Nature",
+      "impact_factor": 49.7,
+      "frequency": "monthly",
+      "openalex": "S2764528046",
+      "issn": "2058-7546",
+      "feeds": [
+        {
+          "url": "https://www.nature.com/nenergy.rss",
+          "type": "journal",
+          "focus": "high"
+        }
+      ]
+    },
+    {
+      "key": "cell",
+      "label": "Cell",
+      "family": "Cell Press",
+      "impact_factor": 48.0,
+      "frequency": "biweekly",
+      "openalex": "S110447773",
+      "issn": "0092-8674",
+      "feeds": [
+        {
+          "url": "https://www.cell.com/cell/current.rss",
+          "type": "current",
+          "focus": "mixed"
+        }
+      ]
+    },
+    {
+      "key": "science",
+      "label": "Science",
+      "family": "Science",
+      "impact_factor": 44.7,
+      "frequency": "weekly",
+      "openalex": "S3880285",
+      "issn": "0036-8075",
+      "feeds": [
+        {
+          "url": "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=science",
+          "type": "etoc",
+          "focus": "mixed"
+        }
+      ]
+    },
+    {
+      "key": "joule",
+      "label": "Joule",
+      "family": "Cell Press",
+      "impact_factor": 38.6,
+      "frequency": "monthly",
+      "openalex": "S2898305631",
+      "issn": "2542-4351",
+      "feeds": [
+        {
+          "url": "https://www.cell.com/joule/current.rss",
+          "type": "current",
+          "focus": "high"
+        }
+      ]
+    },
+    {
+      "key": "nat-nano",
+      "label": "Nature Nanotechnology",
+      "family": "Nature",
+      "impact_factor": 38.1,
+      "frequency": "monthly",
+      "openalex": "S7822423",
+      "issn": "1748-3387",
+      "feeds": [
+        {
+          "url": "https://www.nature.com/nnano.rss",
+          "type": "journal",
+          "focus": "high"
+        }
+      ]
+    },
+    {
+      "key": "nat-catal",
+      "label": "Nature Catalysis",
+      "family": "Nature",
+      "impact_factor": 37.8,
+      "frequency": "monthly",
+      "openalex": "S4210229375",
+      "issn": "2520-1158",
+      "feeds": [
+        {
+          "url": "https://www.nature.com/natcatal.rss",
+          "type": "journal",
+          "focus": "high"
+        }
+      ]
+    },
+    {
+      "key": "nat-materials",
+      "label": "Nature Materials",
+      "family": "Nature",
+      "impact_factor": 37.2,
+      "frequency": "monthly",
+      "openalex": "S103895331",
+      "issn": "1476-1122",
+      "feeds": [
+        {
+          "url": "https://www.nature.com/nmat.rss",
+          "type": "journal",
+          "focus": "high"
+        }
+      ]
+    },
+    {
+      "key": "ees",
+      "label": "Energy & Environmental Science",
+      "family": "RSC",
+      "impact_factor": 32.4,
+      "frequency": "monthly",
+      "openalex": "S117082959",
+      "issn": "1754-5692",
+      "feeds": [
+        {
+          "url": "http://feeds.rsc.org/rss/EE",
+          "type": "journal",
+          "focus": "high"
+        }
+      ]
+    },
+    {
+      "key": "nat-photon",
+      "label": "Nature Photonics",
+      "family": "Nature",
+      "impact_factor": 32.3,
+      "frequency": "monthly",
+      "openalex": "S120392215",
+      "issn": "1749-4885",
+      "feeds": [
+        {
+          "url": "https://www.nature.com/nphoton.rss",
+          "type": "journal",
+          "focus": "mixed"
+        }
+      ]
+    },
+    {
+      "key": "adv-materials",
+      "label": "Advanced Materials",
+      "family": "Wiley",
+      "impact_factor": 27.4,
+      "frequency": "continuous",
+      "openalex": "S99352657",
+      "issn": "0935-9648",
+      "feeds": [
+        {
+          "url": "https://onlinelibrary.wiley.com/feed/15214095/most-recent",
+          "type": "journal",
+          "focus": "high"
+        }
+      ]
+    },
+    {
+      "key": "prog-polym-sci",
+      "label": "Progress in Polymer Science",
+      "family": "Elsevier",
+      "impact_factor": 27.0,
+      "frequency": "monthly",
+      "openalex": "S119685760",
+      "issn": "0079-6700",
+      "feeds": [
+        {
+          "url": "https://rss.sciencedirect.com/publication/science/00796700",
+          "type": "journal",
+          "focus": "high"
+        }
+      ]
+    },
+    {
+      "key": "adv-energy-mater",
+      "label": "Advanced Energy Materials",
+      "family": "Wiley",
+      "impact_factor": 24.4,
+      "frequency": "continuous",
+      "openalex": "S2502627819",
+      "issn": "1614-6832",
+      "feeds": [
+        {
+          "url": "https://onlinelibrary.wiley.com/feed/16146840/most-recent",
+          "type": "journal",
+          "focus": "high"
+        }
+      ]
+    },
+    {
+      "key": "mater-today",
+      "label": "Materials Today",
+      "family": "Elsevier",
+      "impact_factor": 21.1,
+      "frequency": "monthly",
+      "openalex": "S63322718",
+      "issn": "1369-7021",
+      "feeds": [
+        {
+          "url": "https://rss.sciencedirect.com/publication/science/13697021",
+          "type": "journal",
+          "focus": "high"
+        }
+      ]
+    },
+    {
+      "key": "nat-chem",
+      "label": "Nature Chemistry",
+      "family": "Nature",
+      "impact_factor": 19.4,
+      "frequency": "monthly",
+      "openalex": "S202193212",
+      "issn": "1755-4330",
+      "feeds": [
+        {
+          "url": "https://www.nature.com/nchem.rss",
+          "type": "journal",
+          "focus": "mixed"
+        }
+      ]
+    },
+    {
+      "key": "acs-energy-lett",
+      "label": "ACS Energy Letters",
+      "family": "ACS",
+      "impact_factor": 19.3,
+      "frequency": "continuous",
+      "openalex": "S2764414965",
+      "issn": "2380-8195",
+      "feeds": [
+        {
+          "url": "https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=aelccp",
+          "type": "etoc",
+          "focus": "high"
+        }
+      ]
+    },
+    {
+      "key": "chem-cell",
+      "label": "Chem",
+      "family": "Cell Press",
+      "impact_factor": 19.1,
+      "frequency": "monthly",
+      "openalex": "S2898106599",
+      "issn": "2451-9294",
+      "feeds": [
+        {
+          "url": "https://www.cell.com/chem/current.rss",
+          "type": "current",
+          "focus": "mixed"
+        }
+      ]
+    },
+    {
+      "key": "adv-funct-mater",
+      "label": "Advanced Functional Materials",
+      "family": "Wiley",
+      "impact_factor": 18.5,
+      "frequency": "continuous",
+      "openalex": "S135204980",
+      "issn": "1616-301X",
+      "feeds": [
+        {
+          "url": "https://onlinelibrary.wiley.com/feed/16163028/most-recent",
+          "type": "journal",
+          "focus": "high"
+        }
+      ]
+    },
+    {
+      "key": "matter",
+      "label": "Matter",
+      "family": "Cell Press",
+      "impact_factor": 17.5,
+      "frequency": "monthly",
+      "openalex": "S4210178557",
+      "issn": "2590-2385",
+      "feeds": [
+        {
+          "url": "https://www.cell.com/matter/current.rss",
+          "type": "current",
+          "focus": "high"
+        }
+      ]
+    },
+    {
+      "key": "nano-energy",
+      "label": "Nano Energy",
+      "family": "Elsevier",
+      "impact_factor": 16.8,
+      "frequency": "continuous",
+      "openalex": "S2497301991",
+      "issn": "2211-2855",
+      "feeds": [
+        {
+          "url": "https://rss.sciencedirect.com/publication/science/22112855",
+          "type": "journal",
+          "focus": "high"
+        }
+      ]
+    },
+    {
+      "key": "nsr",
+      "label": "National Science Review",
+      "family": "Oxford",
+      "impact_factor": 16.4,
+      "frequency": "monthly",
+      "openalex": "S2734413303",
+      "issn": "2053-714X",
+      "feeds": [
+        {
+          "url": "https://academic.oup.com/rss/site_5332/3198.xml",
+          "type": "current",
+          "focus": "mixed"
+        }
+      ]
+    },
+    {
+      "key": "angew-chem",
+      "label": "Angewandte Chemie International Edition",
+      "family": "Wiley",
+      "impact_factor": 16.1,
+      "frequency": "continuous",
+      "openalex": "S67393510",
+      "issn": "1433-7851",
+      "feeds": [
+        {
+          "url": "https://onlinelibrary.wiley.com/feed/15213773/most-recent",
+          "type": "journal",
+          "focus": "mixed"
+        }
+      ]
+    },
+    {
+      "key": "acs-nano",
+      "label": "ACS Nano",
+      "family": "ACS",
+      "impact_factor": 15.8,
+      "frequency": "continuous",
+      "openalex": "S145476921",
+      "issn": "1936-0851",
+      "feeds": [
+        {
+          "url": "https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=ancac3",
+          "type": "etoc",
+          "focus": "high"
+        }
+      ]
+    },
+    {
+      "key": "nat-commun",
+      "label": "Nature Communications",
+      "family": "Nature",
+      "impact_factor": 14.7,
+      "frequency": "continuous",
+      "openalex": "S64187185",
+      "issn": "2041-1723",
+      "feeds": [
+        {
+          "url": "https://www.nature.com/ncomms.rss",
+          "type": "journal",
+          "focus": "mixed"
+        }
+      ]
+    },
+    {
+      "key": "jacs",
+      "label": "Journal of the American Chemical Society",
+      "family": "ACS",
+      "impact_factor": 14.4,
+      "frequency": "continuous",
+      "openalex": "S111155417",
+      "issn": "0002-7863",
+      "feeds": [
+        {
+          "url": "https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=jacsat",
+          "type": "etoc",
+          "focus": "mixed"
+        }
+      ]
+    },
+    {
+      "key": "small",
+      "label": "Small",
+      "family": "Wiley",
+      "impact_factor": 13.0,
+      "frequency": "continuous",
+      "openalex": "S94619837",
+      "issn": "1613-6810",
+      "feeds": [
+        {
+          "url": "https://onlinelibrary.wiley.com/feed/16136829/most-recent",
+          "type": "journal",
+          "focus": "high"
+        }
+      ]
+    },
+    {
+      "key": "mater-horizons",
+      "label": "Materials Horizons",
+      "family": "RSC",
+      "impact_factor": 12.2,
+      "frequency": "monthly",
+      "openalex": "S2764386229",
+      "issn": "2051-6347",
+      "feeds": [
+        {
+          "url": "http://feeds.rsc.org/rss/MH",
+          "type": "journal",
+          "focus": "high"
+        }
+      ]
+    },
+    {
+      "key": "sci-adv",
+      "label": "Science Advances",
+      "family": "Science",
+      "impact_factor": 11.7,
+      "frequency": "continuous",
+      "openalex": "S2737427234",
+      "issn": "2375-2548",
+      "feeds": [
+        {
+          "url": "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=sciadv",
+          "type": "etoc",
+          "focus": "mixed"
+        }
+      ]
+    },
+    {
+      "key": "jmca",
+      "label": "Journal of Materials Chemistry A",
+      "family": "RSC",
+      "impact_factor": 11.2,
+      "frequency": "continuous",
+      "openalex": "S2764437742",
+      "issn": "2050-7488",
+      "feeds": [
+        {
+          "url": "http://feeds.rsc.org/rss/TA",
+          "type": "journal",
+          "focus": "high"
+        }
+      ]
+    },
+    {
+      "key": "ccs-chem",
+      "label": "CCS Chemistry",
+      "family": "Other",
+      "impact_factor": 11.0,
+      "frequency": "monthly",
+      "openalex": "S4210239486",
+      "issn": "2096-5745",
+      "feeds": [
+        {
+          "url": "https://www.chinesechemsoc.org/action/showFeed?type=etoc&feed=rss&jc=ccschem",
+          "type": "etoc",
+          "focus": "mixed"
+        }
+      ]
+    },
+    {
+      "key": "npj-comp-mater",
+      "label": "npj Computational Materials",
+      "family": "Nature",
+      "impact_factor": 9.7,
+      "frequency": "continuous",
+      "openalex": "S4210232664",
+      "issn": "2057-3960",
+      "feeds": [
+        {
+          "url": "https://www.nature.com/npjcompumats.rss",
+          "type": "journal",
+          "focus": "high"
+        }
+      ]
+    },
+    {
+      "key": "nano-letters",
+      "label": "Nano Letters",
+      "family": "ACS",
+      "impact_factor": 9.6,
+      "frequency": "continuous",
+      "openalex": "S143846845",
+      "issn": "1530-6984",
+      "feeds": [
+        {
+          "url": "https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=nalefd",
+          "type": "etoc",
+          "focus": "high"
+        }
+      ]
+    },
+    {
+      "key": "acta-mater",
+      "label": "Acta Materialia",
+      "family": "Elsevier",
+      "impact_factor": 8.9,
+      "frequency": "continuous",
+      "openalex": "S64016596",
+      "issn": "1359-6454",
+      "feeds": [
+        {
+          "url": "https://rss.sciencedirect.com/publication/science/13596454",
+          "type": "journal",
+          "focus": "high"
+        }
+      ]
+    },
+    {
+      "key": "chem-mater",
+      "label": "Chemistry of Materials",
+      "family": "ACS",
+      "impact_factor": 7.5,
+      "frequency": "continuous",
+      "openalex": "S66104727",
+      "issn": "0897-4756",
+      "feeds": [
+        {
+          "url": "https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=cmatex",
+          "type": "etoc",
+          "focus": "high"
+        }
+      ]
+    },
+    {
+      "key": "jmcc",
+      "label": "Journal of Materials Chemistry C",
+      "family": "RSC",
+      "impact_factor": 7.5,
+      "frequency": "continuous",
+      "openalex": "S2500738039",
+      "issn": "2050-7526",
+      "feeds": [
+        {
+          "url": "http://feeds.rsc.org/rss/TC",
+          "type": "journal",
+          "focus": "high"
+        }
+      ]
+    },
+    {
+      "key": "commun-mater",
+      "label": "Communications Materials",
+      "family": "Nature",
+      "impact_factor": 7.0,
+      "frequency": "continuous",
+      "openalex": "S4210233566",
+      "issn": "2662-4443",
+      "feeds": [
+        {
+          "url": "https://www.nature.com/commsmat.rss",
+          "type": "journal",
+          "focus": "high"
+        }
+      ]
+    },
+    {
+      "key": "nanoscale",
+      "label": "Nanoscale",
+      "family": "RSC",
+      "impact_factor": 6.7,
+      "frequency": "continuous",
+      "openalex": "S23181512",
+      "issn": "2040-3364",
+      "feeds": [
+        {
+          "url": "http://feeds.rsc.org/rss/NR",
+          "type": "journal",
+          "focus": "high"
+        }
+      ]
+    },
+    {
+      "key": "jmcb",
+      "label": "Journal of Materials Chemistry B",
+      "family": "RSC",
+      "impact_factor": 6.5,
+      "frequency": "continuous",
+      "openalex": "S2479884170",
+      "issn": "2050-750X",
+      "feeds": [
+        {
+          "url": "http://feeds.rsc.org/rss/TB",
+          "type": "journal",
+          "focus": "high"
+        }
+      ]
+    },
+    {
+      "key": "acs-macro-lett",
+      "label": "ACS Macro Letters",
+      "family": "ACS",
+      "impact_factor": 6.0,
+      "frequency": "continuous",
+      "openalex": "S75495113",
+      "issn": "2161-1653",
+      "feeds": [
+        {
+          "url": "https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=amlccd",
+          "type": "etoc",
+          "focus": "high"
+        }
+      ]
+    },
+    {
+      "key": "biomacromolecules",
+      "label": "Biomacromolecules",
+      "family": "ACS",
+      "impact_factor": 5.6,
+      "frequency": "continuous",
+      "openalex": "S11629336",
+      "issn": "1525-7797",
+      "feeds": [
+        {
+          "url": "https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=bomaf6",
+          "type": "etoc",
+          "focus": "high"
+        }
+      ]
+    },
+    {
+      "key": "macromolecules",
+      "label": "Macromolecules",
+      "family": "ACS",
+      "impact_factor": 5.5,
+      "frequency": "continuous",
+      "openalex": "S177196338",
+      "issn": "0024-9297",
+      "feeds": [
+        {
+          "url": "https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=mamobx",
+          "type": "etoc",
+          "focus": "high"
+        }
+      ]
+    },
+    {
+      "key": "polym-chem",
+      "label": "Polymer Chemistry",
+      "family": "RSC",
+      "impact_factor": 5.0,
+      "frequency": "continuous",
+      "openalex": "S187215728",
+      "issn": "1759-9954",
+      "feeds": [
+        {
+          "url": "http://feeds.rsc.org/rss/PY",
+          "type": "journal",
+          "focus": "high"
+        }
+      ]
+    },
+    {
+      "key": "org-lett",
+      "label": "Organic Letters",
+      "family": "ACS",
+      "impact_factor": 4.8,
+      "frequency": "continuous",
+      "openalex": "S201989124",
+      "issn": "1523-7052",
+      "feeds": [
+        {
+          "url": "https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=orlef7",
+          "type": "etoc",
+          "focus": "mixed"
+        }
+      ]
+    },
+    {
+      "key": "macromol-rapid-commun",
+      "label": "Macromolecular Rapid Communications",
+      "family": "Wiley",
+      "impact_factor": 4.5,
+      "frequency": "continuous",
+      "openalex": "S130615878",
+      "issn": "1022-1336",
+      "feeds": [
+        {
+          "url": "https://onlinelibrary.wiley.com/feed/15213927/most-recent",
+          "type": "journal",
+          "focus": "high"
+        }
+      ]
+    },
+    {
+      "key": "polymer",
+      "label": "Polymer",
+      "family": "Elsevier",
+      "impact_factor": 4.0,
+      "frequency": "continuous",
+      "openalex": "S186054908",
+      "issn": "0032-3861",
+      "feeds": [
+        {
+          "url": "https://rss.sciencedirect.com/publication/science/00323861",
+          "type": "journal",
+          "focus": "high"
+        }
+      ]
+    }
+  ]
+}

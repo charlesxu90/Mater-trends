@@ -1,0 +1,9 @@
+# Core runtime deps (ingest -> assign -> trends -> site).
+pandas>=2
+feedparser>=6.0
+python-dateutil>=2.8
+
+# Optional extras (install as needed):
+#   pip install -e '.[curate]'     # spaCy NER for candidate keyword extraction
+#   pip install -e '.[citations]'  # requests, for Semantic Scholar / OpenAlex citation counts
+#   pip install -e '.[dev]'        # pytest, pytest-cov
