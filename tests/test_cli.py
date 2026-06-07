@@ -69,6 +69,38 @@ def test_trends_end_to_end(tmp_path, capsys):
     assert "genome editing" in may["emerging"]  # 1 -> 5 is a strong riser
 
 
+def test_citations_trending_only_filters_non_trending(tmp_path, monkeypatch):
+    from mat_trend import citations as C
+
+    config_dir = tmp_path / "config"
+    _write_config(config_dir)
+    data_dir = tmp_path / "data"
+    # three papers: two carry a (top) topic, one carries none
+    _write_papers(data_dir, "cell", "2026-05", [
+        {"title": "CRISPR screen", "abstract": "crispr", "journal": "Cell",
+         "published_date": "2026-05-10", "doi": "10.1/crispr", "link": "", "authors": ""},
+        {"title": "t cell study", "abstract": "t cell", "journal": "Cell",
+         "published_date": "2026-05-11", "doi": "10.1/tcell", "link": "", "authors": ""},
+        {"title": "plain materials note", "abstract": "nothing here", "journal": "Cell",
+         "published_date": "2026-05-12", "doi": "10.1/plain", "link": "", "authors": ""},
+    ])
+    main(["--config", str(config_dir), "assign", str(data_dir / "cell" / "2026-05.csv")])
+
+    # avoid the network; record every due DOI the command asks about
+    monkeypatch.setattr(C, "fetch_counts_multi",
+                        lambda **kw: ({d: 7 for d in kw["due_dois"]}, {"crossref": len(kw["due_dois"])}))
+    cit_dir = tmp_path / "citations"
+    monkeypatch.setattr(C, "counts_path", lambda key, year, **kw: cit_dir / key / f"{year}.json")
+
+    rc = main(["--config", str(config_dir), "citations", "--data-dir", str(data_dir),
+               "--trending-only", "--today", "2026-05-20"])
+
+    assert rc == 0
+    recorded = set(json.loads((cit_dir / "cell" / "2026.json").read_text()))
+    # the two topic-bearing papers are recorded; the untopiced one is filtered out
+    assert recorded == {"10.1/crispr", "10.1/tcell"}
+
+
 def test_check_feeds_list_mode_no_network(tmp_path, capsys):
     config_dir = tmp_path / "config"
     _write_config(config_dir)

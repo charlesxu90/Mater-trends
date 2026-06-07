@@ -263,6 +263,28 @@ def cmd_citations(args: argparse.Namespace) -> int:
     _eprint(f"citations: sources = {', '.join(enabled)} (queried in parallel, merged by max)")
 
     data_dir = Path(args.data_dir)
+
+    # Optional scope: restrict recorded papers to those whose assigned topic is in
+    # the top/emerging set for their journal-year (the Crossref bulk fetch is
+    # unchanged — this only narrows which DOIs get a snapshot recorded).
+    trending_only = getattr(args, "trending_only", False)
+    trending_by_key: dict[str, dict[str, set]] = {}
+    if trending_only:
+        from mat_trend.trends import compute_all_trends
+
+        taxonomy = Taxonomy.load(Path(args.config))
+        label_to_key = {v: k for k, v in registry.key_to_label.items()}
+        for t in compute_all_trends(
+            taxonomy, data_dir, group_by="journal", bucket="year",
+            key_to_label=registry.key_to_label, key_to_family=registry.key_to_family,
+        ):
+            key = label_to_key.get(t.group)
+            if key is None:
+                continue
+            trending_by_key.setdefault(key, {}).setdefault(t.period, set()).update(t.top, t.emerging)
+        n_topics = sum(len(v) for d in trending_by_key.values() for v in d.values())
+        _eprint(f"citations: --trending-only — {n_topics} (journal,year,topic) trend slots")
+
     total_new = 0
 
     for journal in registry.journals:
@@ -272,8 +294,10 @@ def cmd_citations(args: argparse.Namespace) -> int:
         if not key_dir.exists():
             continue
 
-        # gather {year: {doi: published_date}} from the monthly source CSVs
+        # gather {year: {doi: published_date}} from the monthly source CSVs, and
+        # (when --trending-only) {year: {doi: {topics}}} from the *_topics.csv files
         years: dict[str, dict[str, str]] = defaultdict(dict)
+        doi_topics: dict[str, dict[str, set]] = defaultdict(dict)
         for csv in sorted(key_dir.glob("*.csv")):
             if csv.name.endswith("_topics.csv") or len(csv.stem) != 7:
                 continue
@@ -283,6 +307,15 @@ def cmd_citations(args: argparse.Namespace) -> int:
                 doi = str(doi).strip().lower()
                 if doi and doi != "nan":
                     years[year][doi] = str(pub or "")
+            if trending_only:
+                tpath = csv.with_name(csv.name + "_topics.csv")
+                if tpath.exists():
+                    tdf = pd.read_csv(tpath, usecols=lambda c: c in ("doi", "topic"))
+                    for doi, topic in zip(tdf.get("doi", []), tdf.get("topic", [])):
+                        doi = str(doi).strip().lower()
+                        topic = str(topic)
+                        if doi and doi != "nan":
+                            doi_topics[year][doi] = set(topic.split(";")) if topic and topic != "nan" else set()
 
         for year, doi_pub in sorted(years.items()):
             if year_filter and year not in year_filter:
@@ -290,6 +323,10 @@ def cmd_citations(args: argparse.Namespace) -> int:
             path = C.counts_path(journal.key, year)
             history = C.load_history(path)
             due = [d for d, pub in doi_pub.items() if C.is_due(history.get(d, []), pub, today)]
+            if trending_only:
+                allow = trending_by_key.get(journal.key, {}).get(year, set())
+                topics_for_year = doi_topics.get(year, {})
+                due = [d for d in due if topics_for_year.get(d, set()) & allow]
             if not due:
                 continue
             _eprint(f"citations: {journal.key} {year} — {len(due)} due; querying {len(enabled)} source(s)…")
@@ -424,6 +461,8 @@ def build_parser() -> argparse.ArgumentParser:
     p_cit.add_argument("--data-dir", default="data")
     p_cit.add_argument("--throttle", type=float, default=0.5, help="seconds between Crossref pages")
     p_cit.add_argument("--today", default=None, help="override today's date (YYYY-MM-DD), for scheduling/testing")
+    p_cit.add_argument("--trending-only", action="store_true",
+                       help="only record papers whose topic is top/emerging for their journal-year")
     p_cit.set_defaults(func=cmd_citations)
 
     p_exp = sub.add_parser("export-site", help="build static-site JSON for GitHub Pages")
