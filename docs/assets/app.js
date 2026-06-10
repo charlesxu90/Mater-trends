@@ -8,7 +8,7 @@ const BUCKET_LABELS = { year: "Year", quarter: "Quarter", month: "Month" };
 
 // A pinned topic kept permanently visible at the bottom of Topic Trends, with its
 // own paper-count series — for a research focus the user tracks frequently.
-const HIGHLIGHT_TOPIC = "batteries & energy storage";
+const HIGHLIGHT_TOPIC = "regenerative medicine";
 
 const state = {
   manifest: null,
