@@ -48,18 +48,18 @@ Pattern: `https://www.nature.com/<code>.rss` (journal) and `https://www.nature.c
 
 | Family | Journal | Key | Feed type | Frequency | RSS URL | Focus | Status |
 |--------|---------|-----|-----------|-----------|---------|-------|--------|
-| Nature | Nature Reviews Materials | nat-rev-mater | journal | monthly | https://www.nature.com/natrevmats.rss | high | ? |
-| Nature | Nature | nature | subject | weekly | https://www.nature.com/subjects/materials-science.rss | high | ? |
-| Nature | Nature | nature | journal | weekly | https://www.nature.com/nature.rss | mixed | ? |
-| Nature | Nature Energy | nat-energy | journal | monthly | https://www.nature.com/nenergy.rss | high | ? |
-| Nature | Nature Nanotechnology | nat-nano | journal | monthly | https://www.nature.com/nnano.rss | high | ? |
-| Nature | Nature Catalysis | nat-catal | journal | monthly | https://www.nature.com/natcatal.rss | high | ? |
-| Nature | Nature Materials | nat-materials | journal | monthly | https://www.nature.com/nmat.rss | high | ? |
-| Nature | Nature Photonics | nat-photon | journal | monthly | https://www.nature.com/nphoton.rss | mixed | ? |
-| Nature | Nature Chemistry | nat-chem | journal | monthly | https://www.nature.com/nchem.rss | mixed | ? |
-| Nature | Nature Communications | nat-commun | journal | continuous | https://www.nature.com/ncomms.rss | mixed | ? |
-| Nature | npj Computational Materials | npj-comp-mater | journal | continuous | https://www.nature.com/npjcompumats.rss | high | ? |
-| Nature | Communications Materials | commun-mater | journal | continuous | https://www.nature.com/commsmat.rss | high | ? |
+| Nature | Nature Reviews Materials | nat-rev-mater | journal | monthly | https://www.nature.com/natrevmats.rss | high | ✓ |
+| Nature | Nature | nature | subject | weekly | https://www.nature.com/subjects/materials-science.rss | high | ✓ |
+| Nature | Nature | nature | journal | weekly | https://www.nature.com/nature.rss | mixed | ✓ |
+| Nature | Nature Energy | nat-energy | journal | monthly | https://www.nature.com/nenergy.rss | high | ✓ |
+| Nature | Nature Nanotechnology | nat-nano | journal | monthly | https://www.nature.com/nnano.rss | high | ✓ |
+| Nature | Nature Catalysis | nat-catal | journal | monthly | https://www.nature.com/natcatal.rss | high | ✓ |
+| Nature | Nature Materials | nat-materials | journal | monthly | https://www.nature.com/nmat.rss | high | ✓ |
+| Nature | Nature Photonics | nat-photon | journal | monthly | https://www.nature.com/nphoton.rss | mixed | ✓ |
+| Nature | Nature Chemistry | nat-chem | journal | monthly | https://www.nature.com/nchem.rss | mixed | ✓ |
+| Nature | Nature Communications | nat-commun | journal | continuous | https://www.nature.com/ncomms.rss | mixed | ✓ |
+| Nature | npj Computational Materials | npj-comp-mater | journal | continuous | https://www.nature.com/npjcompumats.rss | high | ✓ |
+| Nature | Communications Materials | commun-mater | journal | continuous | https://www.nature.com/commsmat.rss | high | ✓ |
 
 ## Science (AAAS)
 
@@ -67,8 +67,8 @@ Pattern: `https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=<code>`.
 
 | Family | Journal | Key | Feed type | Frequency | RSS URL | Focus | Status |
 |--------|---------|-----|-----------|-----------|---------|-------|--------|
-| Science | Science | science | etoc | weekly | https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=science | mixed | ? |
-| Science | Science Advances | sci-adv | etoc | continuous | https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=sciadv | mixed | ? |
+| Science | Science | science | etoc | weekly | https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=science | mixed | ✓ |
+| Science | Science Advances | sci-adv | etoc | continuous | https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=sciadv | mixed | ✓ |
 
 ## Cell Press
 
@@ -76,10 +76,10 @@ Pattern: `https://www.cell.com/<slug>/current.rss` (latest issue; `/inpress.rss`
 
 | Family | Journal | Key | Feed type | Frequency | RSS URL | Focus | Status |
 |--------|---------|-----|-----------|-----------|---------|-------|--------|
-| Cell Press | Cell | cell | current | biweekly | https://www.cell.com/cell/current.rss | mixed | ? |
-| Cell Press | Joule | joule | current | monthly | https://www.cell.com/joule/current.rss | high | ? |
-| Cell Press | Chem | chem-cell | current | monthly | https://www.cell.com/chem/current.rss | mixed | ? |
-| Cell Press | Matter | matter | current | monthly | https://www.cell.com/matter/current.rss | high | ? |
+| Cell Press | Cell | cell | current | biweekly | https://www.cell.com/cell/current.rss | mixed | ✓ |
+| Cell Press | Joule | joule | current | monthly | https://www.cell.com/joule/current.rss | high | ✓ |
+| Cell Press | Chem | chem-cell | current | monthly | https://www.cell.com/chem/current.rss | mixed | ✓ |
+| Cell Press | Matter | matter | current | monthly | https://www.cell.com/matter/current.rss | high | ✓ |
 
 ## Wiley
 
@@ -87,28 +87,33 @@ Pattern: `https://onlinelibrary.wiley.com/feed/<eISSN>/most-recent`. The number 
 
 | Family | Journal | Key | Feed type | Frequency | RSS URL | Focus | Status |
 |--------|---------|-----|-----------|-----------|---------|-------|--------|
-| Wiley | Advanced Materials | adv-materials | journal | continuous | https://onlinelibrary.wiley.com/feed/15214095/most-recent | high | ? |
-| Wiley | Advanced Energy Materials | adv-energy-mater | journal | continuous | https://onlinelibrary.wiley.com/feed/16146840/most-recent | high | ? |
-| Wiley | Advanced Functional Materials | adv-funct-mater | journal | continuous | https://onlinelibrary.wiley.com/feed/16163028/most-recent | high | ? |
-| Wiley | Angewandte Chemie International Edition | angew-chem | journal | continuous | https://onlinelibrary.wiley.com/feed/15213773/most-recent | mixed | ? |
-| Wiley | Small | small | journal | continuous | https://onlinelibrary.wiley.com/feed/16136829/most-recent | high | ? |
-| Wiley | Macromolecular Rapid Communications | macromol-rapid-commun | journal | continuous | https://onlinelibrary.wiley.com/feed/15213927/most-recent | high | ? |
+| Wiley | Advanced Materials | adv-materials | journal | continuous | https://onlinelibrary.wiley.com/feed/15214095/most-recent | high | ✓ |
+| Wiley | Advanced Energy Materials | adv-energy-mater | journal | continuous | https://onlinelibrary.wiley.com/feed/16146840/most-recent | high | ✓ |
+| Wiley | Advanced Functional Materials | adv-funct-mater | journal | continuous | https://onlinelibrary.wiley.com/feed/16163028/most-recent | high | ✓ |
+| Wiley | Angewandte Chemie International Edition | angew-chem | journal | continuous | https://onlinelibrary.wiley.com/feed/15213773/most-recent | mixed | ✓ |
+| Wiley | Small | small | journal | continuous | https://onlinelibrary.wiley.com/feed/16136829/most-recent | high | ✓ |
+| Wiley | Macromolecular Rapid Communications | macromol-rapid-commun | journal | continuous | https://onlinelibrary.wiley.com/feed/15213927/most-recent | high | ✓ |
 
 ## ACS
 
 Pattern: `https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=<code>` (e.g. `nalefd`, `ancac3`, `mamobx`, `amlccd`, `bomaf6`, `orlef7`). **Cloudflare-protected** — needs a browser `User-Agent`. Serves RDF (RSS 1.0).
 
+As of 2026-08-10 the whole family returns **HTTP 403** to the browser `User-Agent` too, so
+every ACS row below is `✗`. The rows are kept (not deleted) in case the block lifts; in the
+meantime these titles are kept current through the Crossref path — `mat-trend backfill
+--years <YYYY>` covers them by ISSN.
+
 | Family | Journal | Key | Feed type | Frequency | RSS URL | Focus | Status |
 |--------|---------|-----|-----------|-----------|---------|-------|--------|
-| ACS | ACS Energy Letters | acs-energy-lett | etoc | continuous | https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=aelccp | high | ? |
-| ACS | ACS Nano | acs-nano | etoc | continuous | https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=ancac3 | high | ? |
-| ACS | Journal of the American Chemical Society | jacs | etoc | continuous | https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=jacsat | mixed | ? |
-| ACS | Nano Letters | nano-letters | etoc | continuous | https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=nalefd | high | ? |
-| ACS | Chemistry of Materials | chem-mater | etoc | continuous | https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=cmatex | high | ? |
-| ACS | ACS Macro Letters | acs-macro-lett | etoc | continuous | https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=amlccd | high | ? |
-| ACS | Biomacromolecules | biomacromolecules | etoc | continuous | https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=bomaf6 | high | ? |
-| ACS | Macromolecules | macromolecules | etoc | continuous | https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=mamobx | high | ? |
-| ACS | Organic Letters | org-lett | etoc | continuous | https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=orlef7 | mixed | ? |
+| ACS | ACS Energy Letters | acs-energy-lett | etoc | continuous | https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=aelccp | high | ✗ |
+| ACS | ACS Nano | acs-nano | etoc | continuous | https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=ancac3 | high | ✗ |
+| ACS | Journal of the American Chemical Society | jacs | etoc | continuous | https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=jacsat | mixed | ✗ |
+| ACS | Nano Letters | nano-letters | etoc | continuous | https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=nalefd | high | ✗ |
+| ACS | Chemistry of Materials | chem-mater | etoc | continuous | https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=cmatex | high | ✗ |
+| ACS | ACS Macro Letters | acs-macro-lett | etoc | continuous | https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=amlccd | high | ✗ |
+| ACS | Biomacromolecules | biomacromolecules | etoc | continuous | https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=bomaf6 | high | ✗ |
+| ACS | Macromolecules | macromolecules | etoc | continuous | https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=mamobx | high | ✗ |
+| ACS | Organic Letters | org-lett | etoc | continuous | https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=orlef7 | mixed | ✗ |
 
 ## RSC
 
@@ -116,13 +121,13 @@ Pattern: `http://feeds.rsc.org/rss/<CODE>` (uppercase code: `EE`, `TA`, `TB`, `T
 
 | Family | Journal | Key | Feed type | Frequency | RSS URL | Focus | Status |
 |--------|---------|-----|-----------|-----------|---------|-------|--------|
-| RSC | Energy & Environmental Science | ees | journal | monthly | http://feeds.rsc.org/rss/EE | high | ? |
-| RSC | Materials Horizons | mater-horizons | journal | monthly | http://feeds.rsc.org/rss/MH | high | ? |
-| RSC | Journal of Materials Chemistry A | jmca | journal | continuous | http://feeds.rsc.org/rss/TA | high | ? |
-| RSC | Journal of Materials Chemistry C | jmcc | journal | continuous | http://feeds.rsc.org/rss/TC | high | ? |
-| RSC | Nanoscale | nanoscale | journal | continuous | http://feeds.rsc.org/rss/NR | high | ? |
-| RSC | Journal of Materials Chemistry B | jmcb | journal | continuous | http://feeds.rsc.org/rss/TB | high | ? |
-| RSC | Polymer Chemistry | polym-chem | journal | continuous | http://feeds.rsc.org/rss/PY | high | ? |
+| RSC | Energy & Environmental Science | ees | journal | monthly | http://feeds.rsc.org/rss/EE | high | ✓ |
+| RSC | Materials Horizons | mater-horizons | journal | monthly | http://feeds.rsc.org/rss/MH | high | ✓ |
+| RSC | Journal of Materials Chemistry A | jmca | journal | continuous | http://feeds.rsc.org/rss/TA | high | ✓ |
+| RSC | Journal of Materials Chemistry C | jmcc | journal | continuous | http://feeds.rsc.org/rss/TC | high | ✓ |
+| RSC | Nanoscale | nanoscale | journal | continuous | http://feeds.rsc.org/rss/NR | high | ✓ |
+| RSC | Journal of Materials Chemistry B | jmcb | journal | continuous | http://feeds.rsc.org/rss/TB | high | ✓ |
+| RSC | Polymer Chemistry | polym-chem | journal | continuous | http://feeds.rsc.org/rss/PY | high | ✓ |
 
 ## Elsevier (ScienceDirect)
 
@@ -130,11 +135,11 @@ Pattern: `https://rss.sciencedirect.com/publication/science/<ISSN-no-hyphens>`. 
 
 | Family | Journal | Key | Feed type | Frequency | RSS URL | Focus | Status |
 |--------|---------|-----|-----------|-----------|---------|-------|--------|
-| Elsevier | Progress in Polymer Science | prog-polym-sci | journal | monthly | https://rss.sciencedirect.com/publication/science/00796700 | high | ? |
-| Elsevier | Materials Today | mater-today | journal | monthly | https://rss.sciencedirect.com/publication/science/13697021 | high | ? |
-| Elsevier | Nano Energy | nano-energy | journal | continuous | https://rss.sciencedirect.com/publication/science/22112855 | high | ? |
-| Elsevier | Acta Materialia | acta-mater | journal | continuous | https://rss.sciencedirect.com/publication/science/13596454 | high | ? |
-| Elsevier | Polymer | polymer | journal | continuous | https://rss.sciencedirect.com/publication/science/00323861 | high | ? |
+| Elsevier | Progress in Polymer Science | prog-polym-sci | journal | monthly | https://rss.sciencedirect.com/publication/science/00796700 | high | ✓ |
+| Elsevier | Materials Today | mater-today | journal | monthly | https://rss.sciencedirect.com/publication/science/13697021 | high | ✓ |
+| Elsevier | Nano Energy | nano-energy | journal | continuous | https://rss.sciencedirect.com/publication/science/22112855 | high | ✓ |
+| Elsevier | Acta Materialia | acta-mater | journal | continuous | https://rss.sciencedirect.com/publication/science/13596454 | high | ✓ |
+| Elsevier | Polymer | polymer | journal | continuous | https://rss.sciencedirect.com/publication/science/00323861 | high | ✓ |
 
 ## Oxford Academic
 
@@ -142,7 +147,7 @@ Pattern: `https://academic.oup.com/rss/site_<SITEID>/<NODEID>.xml`. The numeric 
 
 | Family | Journal | Key | Feed type | Frequency | RSS URL | Focus | Status |
 |--------|---------|-----|-----------|-----------|---------|-------|--------|
-| Oxford | National Science Review | nsr | current | monthly | https://academic.oup.com/rss/site_5332/3198.xml | mixed | ? |
+| Oxford | National Science Review | nsr | current | monthly | https://academic.oup.com/rss/site_5332/3198.xml | mixed | ✓ |
 
 ## Other
 
@@ -150,7 +155,7 @@ Society / domestic flagship journals on miscellaneous platforms. CCS Chemistry (
 
 | Family | Journal | Key | Feed type | Frequency | RSS URL | Focus | Status |
 |--------|---------|-----|-----------|-----------|---------|-------|--------|
-| Other | CCS Chemistry | ccs-chem | etoc | monthly | https://www.chinesechemsoc.org/action/showFeed?type=etoc&feed=rss&jc=ccschem | mixed | ? |
+| Other | CCS Chemistry | ccs-chem | etoc | monthly | https://www.chinesechemsoc.org/action/showFeed?type=etoc&feed=rss&jc=ccschem | mixed | ✓ |
 
 <!--
 Maintenance:
