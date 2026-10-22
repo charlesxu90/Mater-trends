@@ -1,0 +1,238 @@
+{
+  "version": "0.1",
+  "domains": [
+    {"code": "SYN", "name": "Synthesis & chemical processing",
+     "summary": "How a material is made from precursors: wet chemistry, solid-state and high-temperature routes, and framework/2D-material growth.",
+     "children": [
+      {"name": "Solution & wet chemistry", "children": [
+        {"name": "Sol-gel", "examples": ["Sol-gel review (Hench & West)"], "keywords": ["sol-gel", "sol gel", "xerogel"]},
+        {"name": "Hydrothermal & solvothermal", "keywords": ["hydrothermal", "solvothermal", "microwave-assisted synthesis"]},
+        {"name": "Colloidal nanocrystal synthesis", "examples": ["Hot injection (Murray et al.)", "Turkevich gold", "Brust–Schiffrin", "Stöber silica"], "keywords": ["hot-injection", "hot injection", "colloidal synthesis", "colloidal nanocrystal", "seed-mediated growth", "seeded growth"]},
+        {"name": "Co-precipitation & electrodeposition", "keywords": ["coprecipitation", "co-precipitation", "electrodeposition", "electrodeposited", "electroplating"]},
+        {"name": "Polymerization & polymer synthesis", "keywords": ["controlled radical polymerization", "atom transfer radical polymerization", "raft polymerization", "ring-opening polymerization", "polycondensation", "living polymerization", "click chemistry"]}
+      ]},
+      {"name": "Solid-state & high-temperature", "children": [
+        {"name": "Solid-state reaction & calcination", "keywords": ["solid-state reaction", "solid-state synthesis", "calcination", "pyrolysis"]},
+        {"name": "Sintering & densification", "examples": ["Spark plasma sintering", "Cold sintering"], "keywords": ["spark plasma sintering", "cold sintering", "hot pressing", "sintering"]},
+        {"name": "Melting, casting & solidification", "keywords": ["arc melting", "arc-melted", "die casting", "investment casting", "solidification", "directional solidification", "single crystal growth", "czochralski", "bridgman", "flux growth"]},
+        {"name": "Ultrafast & shock synthesis", "examples": ["Flash Joule heating", "Carbothermal shock"], "keywords": ["flash joule heating", "carbothermal shock", "laser ablation in liquid", "high-temperature shock", "combustion synthesis"]},
+        {"name": "Mechanochemistry & milling", "examples": ["Mechanochemistry review"], "keywords": ["ball milling", "ball-milled", "mechanochemical", "mechanochemistry", "mechanical alloying"]},
+        {"name": "Alloy design & thermomechanical processing", "examples": ["High-entropy alloy (Yeh)", "Cantor alloy"], "keywords": ["high-entropy alloy", "multi-principal element", "heat treatment", "annealing treatment", "cold rolling", "hot rolling", "severe plastic deformation", "equal channel angular", "high-pressure torsion", "precipitation hardening"]}
+      ]},
+      {"name": "Frameworks, porous & low-dimensional growth", "children": [
+        {"name": "Reticular synthesis (MOFs/COFs)", "examples": ["MOF-5", "COF-1", "ZIF-8"], "keywords": ["metal-organic framework", "metal organic framework", "covalent organic framework", "zeolitic imidazolate framework", "reticular chemistry"]},
+        {"name": "Templating & mesoporous synthesis", "examples": ["MCM-41", "SBA-15"], "keywords": ["templating", "template-assisted", "hard template", "soft template", "mesoporous silica", "evaporation-induced self-assembly"]},
+        {"name": "Exfoliation & delamination", "examples": ["Mechanical exfoliation", "Liquid-phase exfoliation", "MXene (Ti3C2)"], "keywords": ["exfoliation", "exfoliated", "delamination", "delaminated", "liquid-phase exfoliation", "etching of max"]},
+        {"name": "Graphene oxide & reduction", "examples": ["Hummers' method"], "keywords": ["graphene oxide", "reduced graphene oxide", "hummers"]},
+        {"name": "Self-assembly & supramolecular", "keywords": ["self-assembly", "self-assembled", "supramolecular assembly", "block copolymer self-assembly", "directed assembly", "crystallization-driven"]},
+        {"name": "Biosynthesis & biomineralization", "keywords": ["biomineralization", "biosynthesis", "bioinspired synthesis", "biotemplate", "biotemplated", "green synthesis"]}
+      ]}
+    ]},
+    {"code": "FILM", "name": "Thin films & surface engineering",
+     "summary": "Growth and modification of films, coatings and interfaces, from atomic-layer to large-area solution coating.",
+     "children": [
+      {"name": "Vapor-phase deposition", "children": [
+        {"name": "Chemical vapor deposition", "examples": ["CVD graphene on Cu"], "keywords": ["chemical vapor deposition", "chemical vapour deposition", "^cvd", "cvd-grown", "plasma-enhanced chemical vapor"]},
+        {"name": "Atomic layer deposition", "examples": ["ALD review (George)"], "keywords": ["atomic layer deposition", "^ald", "molecular layer deposition"]},
+        {"name": "Molecular beam epitaxy & epitaxy", "keywords": ["molecular beam epitaxy", "^mbe", "epitaxial growth", "epitaxially grown", "remote epitaxy", "van der waals epitaxy"]},
+        {"name": "Pulsed laser deposition", "examples": ["Pulsed laser deposition"], "keywords": ["pulsed laser deposition", "^pld"]},
+        {"name": "Sputtering & evaporation", "keywords": ["magnetron sputtering", "sputtering", "sputtered", "thermal evaporation", "electron beam evaporation", "physical vapor deposition"]}
+      ]},
+      {"name": "Solution coating & printing", "children": [
+        {"name": "Spin, blade & slot-die coating", "examples": ["Antisolvent spin coating"], "keywords": ["spin coating", "spin-coated", "blade coating", "blade-coated", "slot-die", "meniscus coating", "antisolvent"]},
+        {"name": "Spray, dip & layer-by-layer", "keywords": ["spray coating", "spray pyrolysis", "dip coating", "layer-by-layer", "langmuir-blodgett"]},
+        {"name": "Printed electronics & inkjet", "keywords": ["inkjet printing", "inkjet-printed", "screen printing", "printed electronics", "roll-to-roll"]}
+      ]},
+      {"name": "Surface & interface engineering", "children": [
+        {"name": "Surface functionalization & passivation", "keywords": ["surface passivation", "surface functionalization", "self-assembled monolayer", "ligand exchange", "surface modification", "grafting"]},
+        {"name": "Strain & defect engineering", "keywords": ["strain engineering", "defect engineering", "vacancy engineering", "lattice strain", "doping strategy"]},
+        {"name": "Heterostructure & twist engineering", "keywords": ["heterostructure", "heterojunction", "van der waals heterostructure", "twisted bilayer", "moiré", "moire"]}
+      ]}
+    ]},
+    {"code": "FAB", "name": "Fabrication & manufacturing",
+     "summary": "Shaping materials into structures and devices: additive manufacturing, lithography, fibers and device integration.",
+     "children": [
+      {"name": "Additive manufacturing", "children": [
+        {"name": "Laser powder bed fusion", "examples": ["Metal AM review (DebRoy)", "Printable high-strength Al"], "keywords": ["laser powder bed fusion", "selective laser melting", "powder bed fusion", "electron beam melting", "^lpbf"]},
+        {"name": "Directed energy deposition & wire-arc", "keywords": ["directed energy deposition", "wire arc additive", "laser metal deposition", "cold spray"]},
+        {"name": "Vat photopolymerization", "examples": ["CLIP"], "keywords": ["stereolithography", "digital light processing", "vat photopolymerization", "continuous liquid interface", "volumetric printing", "volumetric additive"]},
+        {"name": "Direct ink writing & extrusion", "examples": ["Direct ink writing"], "keywords": ["direct ink writing", "extrusion printing", "fused deposition modeling", "embedded printing", "3d-printed", "3d printing", "additive manufacturing", "additively manufactured"]},
+        {"name": "4D printing & programmable matter", "examples": ["4D printing"], "keywords": ["4d printing", "4d-printed", "shape-morphing", "programmable matter"]}
+      ]},
+      {"name": "Micro- & nanofabrication", "children": [
+        {"name": "Lithography", "keywords": ["photolithography", "electron beam lithography", "e-beam lithography", "extreme ultraviolet lithography", "interference lithography"]},
+        {"name": "Nanoimprint & soft lithography", "examples": ["Nanoimprint lithography", "Dip-pen nanolithography"], "keywords": ["nanoimprint", "soft lithography", "microcontact printing", "transfer printing"]},
+        {"name": "Two-photon & laser direct writing", "examples": ["Two-photon lithography"], "keywords": ["two-photon lithography", "two-photon polymerization", "direct laser writing", "laser direct writing", "femtosecond laser"]},
+        {"name": "Etching & focused-ion-beam milling", "keywords": ["reactive ion etching", "focused ion beam", "dry etching", "wet etching", "plasma etching"]}
+      ]},
+      {"name": "Fibers, foams & device integration", "children": [
+        {"name": "Electrospinning & fiber spinning", "examples": ["Electrospinning (Li & Xia)"], "keywords": ["electrospinning", "electrospun", "wet spinning", "fiber drawing", "thermal drawing", "microfluidic spinning"]},
+        {"name": "Freeze casting & foams", "keywords": ["freeze casting", "freeze-casting", "ice templating", "ice-templated", "aerogel", "foaming"]},
+        {"name": "Device fabrication & packaging", "keywords": ["device fabrication", "flexible substrate", "wafer-scale", "monolithic integration", "back-end-of-line"]}
+      ]}
+    ]},
+    {"code": "CHAR", "name": "Structural & chemical characterization",
+     "summary": "Determining structure, composition and bonding with diffraction, scattering and X-ray/neutron probes.",
+     "children": [
+      {"name": "Diffraction & scattering", "children": [
+        {"name": "X-ray diffraction & refinement", "examples": ["Rietveld refinement"], "keywords": ["x-ray diffraction", "powder diffraction", "rietveld", "single-crystal diffraction", "^xrd"]},
+        {"name": "Small-angle & total scattering", "keywords": ["small-angle x-ray scattering", "small-angle scattering", "pair distribution function", "total scattering", "grazing-incidence wide-angle", "^saxs", "^giwaxs"]},
+        {"name": "Neutron scattering", "keywords": ["neutron scattering", "neutron diffraction", "inelastic neutron", "neutron reflectometry"]},
+        {"name": "Electron diffraction & 3D ED", "keywords": ["electron diffraction", "3d electron diffraction", "microed", "precession electron diffraction"]}
+      ]},
+      {"name": "Synchrotron & X-ray probes", "children": [
+        {"name": "X-ray absorption (XANES/EXAFS)", "examples": ["EXAFS (Sayers, Stern, Lytle)"], "keywords": ["x-ray absorption", "exafs", "xanes", "x-ray absorption near-edge", "extended x-ray absorption"]},
+        {"name": "X-ray imaging & tomography", "keywords": ["x-ray tomography", "x-ray computed tomography", "nano-ct", "micro-ct", "x-ray microscopy", "ptychographic x-ray"]},
+        {"name": "Resonant & coherent X-ray methods", "keywords": ["resonant inelastic x-ray", "resonant x-ray", "x-ray photon correlation", "coherent diffraction imaging", "bragg coherent"]}
+      ]},
+      {"name": "Chemical & thermal analysis", "children": [
+        {"name": "Mass spectrometry & elemental analysis", "keywords": ["mass spectrometry", "secondary ion mass", "tof-sims", "inductively coupled plasma", "^icp-ms"]},
+        {"name": "Thermal analysis", "keywords": ["thermogravimetric", "differential scanning calorimetry", "thermal analysis", "^tga", "^dsc"]},
+        {"name": "Gas sorption & porosimetry", "keywords": ["gas sorption", "nitrogen adsorption", "bet surface area", "porosimetry", "adsorption isotherm"]}
+      ]}
+    ]},
+    {"code": "SPEC", "name": "Spectroscopy",
+     "summary": "Probing electronic, vibrational and spin states with photons, electrons and magnetic resonance.",
+     "children": [
+      {"name": "Vibrational spectroscopy", "children": [
+        {"name": "Raman spectroscopy", "examples": ["Raman of graphene (Ferrari)"], "keywords": ["raman spectroscopy", "raman spectra", "raman spectrum", "raman mapping", "tip-enhanced raman"]},
+        {"name": "Surface-enhanced Raman (SERS)", "examples": ["SERS (Fleischmann)", "Single-molecule SERS"], "keywords": ["surface-enhanced raman", "^sers", "sers substrate"]},
+        {"name": "Infrared & FTIR", "keywords": ["infrared spectroscopy", "ftir", "fourier transform infrared", "nano-ftir", "attenuated total reflection"]}
+      ]},
+      {"name": "Electron & photoemission spectroscopy", "children": [
+        {"name": "X-ray photoelectron spectroscopy", "keywords": ["x-ray photoelectron", "^xps", "ambient-pressure xps", "hard x-ray photoelectron"]},
+        {"name": "ARPES", "examples": ["ARPES review"], "keywords": ["angle-resolved photoemission", "^arpes"]},
+        {"name": "Electron energy-loss spectroscopy", "keywords": ["electron energy loss", "electron energy-loss", "^eels", "vibrational eels"]}
+      ]},
+      {"name": "Optical & ultrafast spectroscopy", "children": [
+        {"name": "Photoluminescence & absorption", "examples": ["Tauc plot"], "keywords": ["photoluminescence", "uv-vis", "absorption spectroscopy", "tauc", "quantum yield"]},
+        {"name": "Ultrafast & time-resolved", "keywords": ["transient absorption", "ultrafast spectroscopy", "pump-probe", "time-resolved photoluminescence", "terahertz spectroscopy", "two-dimensional electronic spectroscopy"]},
+        {"name": "Nonlinear & chiroptical optics", "keywords": ["second harmonic generation", "nonlinear optical", "circular dichroism", "circularly polarized luminescence"]}
+      ]},
+      {"name": "Magnetic resonance & nuclear probes", "children": [
+        {"name": "Solid-state NMR", "examples": ["Magic-angle spinning NMR"], "keywords": ["solid-state nmr", "magic angle spinning", "magic-angle spinning", "^nmr"]},
+        {"name": "EPR / ESR", "keywords": ["electron paramagnetic resonance", "electron spin resonance", "^epr"]},
+        {"name": "Mössbauer & muon spectroscopy", "keywords": ["mössbauer", "mossbauer", "muon spin"]}
+      ]}
+    ]},
+    {"code": "MICRO", "name": "Microscopy & imaging",
+     "summary": "Real-space imaging from atoms to devices: electron, scanning-probe, optical and 3D microscopies, increasingly in situ.",
+     "children": [
+      {"name": "Electron microscopy", "children": [
+        {"name": "Aberration-corrected (S)TEM", "examples": ["Aberration-corrected TEM"], "keywords": ["scanning transmission electron microscopy", "transmission electron microscopy", "aberration-corrected", "haadf-stem", "atomic-resolution imaging", "integrated differential phase contrast"]},
+        {"name": "4D-STEM & ptychography", "examples": ["Electron ptychography"], "keywords": ["4d-stem", "electron ptychography", "four-dimensional scanning transmission"]},
+        {"name": "Cryo-electron microscopy", "examples": ["Cryo-EM of Li dendrites"], "keywords": ["cryo-electron microscopy", "cryo-em", "cryogenic electron microscopy", "cryo-tem"]},
+        {"name": "Scanning electron microscopy & EBSD", "keywords": ["scanning electron microscopy", "electron backscatter diffraction", "^ebsd", "^sem"]},
+        {"name": "In situ & liquid-cell TEM", "examples": ["Liquid-cell TEM growth"], "keywords": ["in situ tem", "in situ transmission electron", "liquid-cell", "liquid cell tem", "environmental tem", "in situ electron microscopy"]}
+      ]},
+      {"name": "Scanning probe microscopy", "children": [
+        {"name": "Scanning tunneling microscopy", "examples": ["STM"], "keywords": ["scanning tunneling microscopy", "scanning tunnelling microscopy", "scanning tunneling spectroscopy", "^stm"]},
+        {"name": "Atomic force microscopy", "examples": ["AFM"], "keywords": ["atomic force microscopy", "^afm", "conductive afm", "non-contact afm"]},
+        {"name": "Kelvin probe & piezoresponse", "examples": ["Kelvin probe force microscopy"], "keywords": ["kelvin probe force", "piezoresponse force", "^kpfm", "^pfm", "magnetic force microscopy"]}
+      ]},
+      {"name": "3D, optical & correlative imaging", "children": [
+        {"name": "Atom probe tomography", "examples": ["Atom probe tomography"], "keywords": ["atom probe tomography", "atom probe"]},
+        {"name": "Electron tomography", "keywords": ["electron tomography", "3d reconstruction", "fib-sem tomography"]},
+        {"name": "Super-resolution & near-field optics", "keywords": ["super-resolution", "near-field optical", "scanning near-field", "^snom", "single-particle tracking"]}
+      ]}
+    ]},
+    {"code": "ECHEM", "name": "Electrochemical & device testing",
+     "summary": "Measuring how materials perform in batteries, electrocatalysts and devices, and watching them while they work.",
+     "children": [
+      {"name": "Electrochemical methods", "children": [
+        {"name": "Voltammetry & galvanostatic cycling", "keywords": ["cyclic voltammetry", "galvanostatic", "linear sweep voltammetry", "rate capability", "cycling stability"]},
+        {"name": "Impedance & kinetics", "examples": ["GITT"], "keywords": ["electrochemical impedance", "impedance spectroscopy", "galvanostatic intermittent titration", "^gitt", "distribution of relaxation times"]},
+        {"name": "Electrocatalytic testing", "keywords": ["rotating disk electrode", "rotating ring-disk", "tafel slope", "faradaic efficiency", "membrane electrode assembly", "flow cell"]}
+      ]},
+      {"name": "Operando & in situ methods", "children": [
+        {"name": "Operando spectroscopy", "keywords": ["operando raman", "operando x-ray", "operando xas", "in situ raman", "in situ ftir", "operando spectroscopy", "in situ spectroscopy"]},
+        {"name": "Operando diffraction & imaging", "keywords": ["operando xrd", "in situ xrd", "operando imaging", "operando diffraction", "operando"]},
+        {"name": "Differential electrochemical mass spectrometry", "keywords": ["differential electrochemical mass", "^dems", "online electrochemical mass"]}
+      ]},
+      {"name": "Device & optoelectronic metrology", "children": [
+        {"name": "Solar cell metrology", "keywords": ["current density-voltage", "external quantum efficiency", "power conversion efficiency", "maximum power point tracking", "operational stability"]},
+        {"name": "Transistor & transport characterization", "keywords": ["field-effect mobility", "transfer characteristics", "hall effect", "hall measurement", "carrier mobility", "space-charge-limited current"]},
+        {"name": "Accelerated aging & failure analysis", "keywords": ["accelerated aging", "degradation mechanism", "failure analysis", "damp heat"]}
+      ]}
+    ]},
+    {"code": "PROP", "name": "Property measurement",
+     "summary": "Quantifying mechanical, thermal, magnetic and transport behaviour, including under extreme conditions.",
+     "children": [
+      {"name": "Mechanical testing", "children": [
+        {"name": "Nanoindentation & micromechanics", "examples": ["Oliver–Pharr"], "keywords": ["nanoindentation", "micropillar compression", "micropillar", "in situ mechanical"]},
+        {"name": "Tensile, fatigue & fracture testing", "keywords": ["tensile test", "tensile testing", "fatigue", "fracture toughness", "crack growth", "creep"]},
+        {"name": "Rheology & viscoelasticity", "keywords": ["rheology", "rheological", "dynamic mechanical analysis", "viscoelastic", "viscoelasticity"]}
+      ]},
+      {"name": "Thermal & transport", "children": [
+        {"name": "Thermal conductivity", "examples": ["Laser flash", "3ω method", "TDTR"], "keywords": ["thermal conductivity", "thermal diffusivity", "laser flash", "time-domain thermoreflectance", "3-omega", "3 omega method"]},
+        {"name": "Electrical & ionic transport", "keywords": ["ionic conductivity", "electrical conductivity", "four-probe", "four-point probe", "magnetotransport", "magnetoresistance"]},
+        {"name": "Low-temperature & high-field measurement", "keywords": ["dilution refrigerator", "millikelvin", "high magnetic field", "quantum oscillation", "specific heat"]}
+      ]},
+      {"name": "Magnetic & extreme conditions", "children": [
+        {"name": "Magnetometry", "keywords": ["squid magnetometry", "vibrating sample magnetometer", "magnetization measurement", "magnetic susceptibility", "magneto-optical kerr"]},
+        {"name": "High pressure", "keywords": ["high pressure", "diamond anvil cell", "high-pressure synthesis"]},
+        {"name": "Irradiation & corrosion testing", "keywords": ["ion irradiation", "neutron irradiation", "radiation damage", "radiation tolerance", "corrosion resistance", "corrosion behavior", "hydrogen embrittlement"]}
+      ]}
+    ]},
+    {"code": "COMP", "name": "Computation & simulation",
+     "summary": "Physics-based modelling from electrons to continuum: DFT and beyond, molecular dynamics, mesoscale and process models.",
+     "children": [
+      {"name": "Electronic structure", "children": [
+        {"name": "Density functional theory", "examples": ["Hohenberg–Kohn", "Kohn–Sham", "PBE", "VASP"], "keywords": ["density functional theory", "first-principles", "first principles", "ab initio", "^dft"]},
+        {"name": "Hybrid, +U & dispersion corrections", "examples": ["HSE", "DFT+U (Dudarev)", "DFT-D3"], "keywords": ["hybrid functional", "hse06", "dft+u", "hubbard u", "van der waals correction", "dispersion correction"]},
+        {"name": "Beyond-DFT many-body methods", "examples": ["GW (Hybertsen–Louie)"], "keywords": ["many-body perturbation", "gw approximation", "bethe-salpeter", "dynamical mean-field", "quantum monte carlo", "coupled cluster"]},
+        {"name": "Band structure & topology calculations", "examples": ["Wannier functions review", "Phonopy", "BoltzTraP"], "keywords": ["band structure calculation", "wannier", "berry curvature", "topological invariant", "phonon dispersion", "electron-phonon coupling"]},
+        {"name": "Reaction energetics & barriers", "examples": ["CI-NEB", "Computational hydrogen electrode", "Bader analysis"], "keywords": ["nudged elastic band", "reaction pathway", "free energy diagram", "computational hydrogen electrode", "adsorption energy", "d-band center"]}
+      ]},
+      {"name": "Atomistic & molecular simulation", "children": [
+        {"name": "Molecular dynamics", "examples": ["LAMMPS"], "keywords": ["molecular dynamics", "md simulation", "ab initio molecular dynamics", "^aimd", "coarse-grained"]},
+        {"name": "Classical & reactive force fields", "examples": ["EAM", "ReaxFF"], "keywords": ["force field", "interatomic potential", "embedded-atom", "reaxff", "reactive force field"]},
+        {"name": "Monte Carlo & enhanced sampling", "keywords": ["monte carlo", "kinetic monte carlo", "metadynamics", "enhanced sampling", "cluster expansion"]},
+        {"name": "Crystal structure prediction", "examples": ["USPEX"], "keywords": ["crystal structure prediction", "structure prediction", "evolutionary algorithm", "global optimization"]}
+      ]},
+      {"name": "Mesoscale & continuum", "children": [
+        {"name": "Phase-field modelling", "examples": ["Phase-field review (Chen)"], "keywords": ["phase-field", "phase field"]},
+        {"name": "CALPHAD & thermodynamic modelling", "keywords": ["calphad", "thermodynamic modeling", "phase diagram calculation", "computational thermodynamics"]},
+        {"name": "Finite element & multiphysics", "keywords": ["finite element", "finite-element", "multiphysics", "computational fluid dynamics", "continuum model", "crystal plasticity"]},
+        {"name": "Dislocation dynamics & micromechanics", "keywords": ["dislocation dynamics", "discrete dislocation", "micromechanical model", "homogenization"]}
+      ]}
+    ]},
+    {"code": "ML", "name": "Data-driven & autonomous materials science",
+     "summary": "Machine learning, databases and self-driving labs that predict, generate and discover materials.",
+     "children": [
+      {"name": "Property prediction & representation", "children": [
+        {"name": "Graph neural networks for crystals", "examples": ["CGCNN", "MEGNet"], "keywords": ["graph neural network", "crystal graph", "message passing neural", "equivariant neural network"]},
+        {"name": "General & interpretable ML", "examples": ["SISSO"], "keywords": ["machine learning", "machine-learning", "symbolic regression", "feature engineering", "interpretable machine learning", "random forest", "gaussian process regression"]},
+        {"name": "Benchmarks & datasets", "examples": ["Materials Project", "OQMD", "AFLOW", "Matbench"], "keywords": ["benchmark dataset", "materials database", "high-throughput screening", "high-throughput calculation", "materials genome"]}
+      ]},
+      {"name": "ML potentials & surrogate simulation", "children": [
+        {"name": "Machine-learning interatomic potentials", "examples": ["Behler–Parrinello", "GAP", "NequIP"], "keywords": ["machine learning potential", "machine-learning potential", "machine learning interatomic", "machine-learned interatomic", "neural network potential", "deep potential", "moment tensor potential"]},
+        {"name": "Universal / foundation potentials", "examples": ["M3GNet", "CHGNet"], "keywords": ["universal interatomic potential", "universal machine learning interatomic", "universal potential", "foundation potential", "atomistic foundation model", "materials foundation model", "pretrained potential"]}
+      ]},
+      {"name": "Generative & inverse design", "children": [
+        {"name": "Generative models for materials", "examples": ["MatterGen", "Inverse design review"], "keywords": ["generative model", "diffusion model", "variational autoencoder", "generative adversarial", "inverse design"]},
+        {"name": "Large-scale discovery", "examples": ["GNoME"], "keywords": ["materials discovery", "accelerated discovery", "deep learning discovery", "active learning"]},
+        {"name": "Language models & text mining", "examples": ["Word embeddings (Tshitoyan)", "ChemCrow"], "keywords": ["large language model", "language model", "text mining", "natural language processing", "^llm"]}
+      ]},
+      {"name": "Autonomous experimentation", "children": [
+        {"name": "Self-driving laboratories", "examples": ["A-Lab", "Ada", "Mobile robotic chemist", "Coscientist"], "keywords": ["self-driving lab", "self-driving laboratory", "autonomous laboratory", "autonomous experimentation", "robotic platform", "automated synthesis platform"]},
+        {"name": "Bayesian optimization & experimental design", "keywords": ["bayesian optimization", "design of experiments", "experimental design", "multi-objective optimization"]},
+        {"name": "Automated image & spectra analysis", "keywords": ["image segmentation", "convolutional neural network", "deep learning analysis", "automated analysis", "computer vision"]}
+      ]}
+    ]}
+  ],
+  "facets": [
+    {"name": "Material class", "tags": ["metals & alloys", "ceramics & glasses", "polymers & soft matter", "composites", "2D materials", "MOFs/COFs & porous", "halide perovskites", "nanocrystals & quantum dots", "biomaterials"]},
+    {"name": "Length scale", "tags": ["atomic", "nano", "micro", "bulk", "device/system"]},
+    {"name": "Conditions", "tags": ["ex situ", "in situ", "operando", "cryogenic", "high pressure", "high temperature", "irradiation"]},
+    {"name": "Contribution form", "tags": ["new material", "new method/instrument", "mechanism insight", "device demonstration", "dataset/database", "software/model", "review/perspective"]}
+  ],
+  "heuristics": [
+    "Pick the primary node by the paper's main methodological contribution, not the material it studies (a new MOF made by solvothermal synthesis is Synthesis > Reticular synthesis).",
+    "A paper that introduces a new instrument or measurement protocol belongs under the technique it advances; papers that only use routine characterization take their primary node from synthesis or computation.",
+    "Combined theory-experiment papers: choose Computation only when the calculations drive the discovery; otherwise the experimental method is primary and Computation is secondary.",
+    "Operando/in situ work goes under Electrochemical & device testing > Operando when the measurement is during operation; otherwise under the probe's own branch (e.g. In situ TEM).",
+    "ML papers whose output is a trained model or dataset go under Data-driven; ML used as a minor analysis tool is a secondary node at most.",
+    "Use the Application Tree (and the material-class facet) for what the material is for; keep the Method Tree for how the work was done."
+  ]
+}

@@ -7,6 +7,8 @@ read the CSVs directly. This module exports:
 * ``papers/<key>_<period>.json`` — one shard per journal-month, loaded on demand.
 * ``manifest.json`` — journals, families, available shards, periods, and the topics
   that actually occur (drives the site's filters).
+* ``ontology.json`` / ``applications.json`` — the Method Tree and Application Tree
+  (``config/``) annotated with per-node paper counts and per-leaf top papers.
 
 Journal/period identity comes from the **file location** via the registry.
 """
@@ -16,11 +18,22 @@ from __future__ import annotations
 import ast
 import csv
 import json
+import re
 from pathlib import Path
 from typing import TYPE_CHECKING
 
 from mat_trend.citations import CITATIONS_DIR, citation_delta, counts_path, latest_count, load_history
 from mat_trend.ingest import DEFAULT_DATA_DIR
+from mat_trend.method_papers import compile_matcher, match_leaves, site_ontology
+from mat_trend.ontology import (
+    APPLICATIONS_FILENAME,
+    DEFAULT_APPLICATIONS_PATH,
+    ONTOLOGY_FILENAME,
+    load_method_refs,
+    load_ontology,
+    used_refs,
+    write_ontology,
+)
 from mat_trend.registry import JournalRegistry
 from mat_trend.taxonomy import Taxonomy
 from mat_trend.trends import (
@@ -43,6 +56,8 @@ if TYPE_CHECKING:  # pragma: no cover - typing only
 DEFAULT_SITE_DATA_DIR = Path(__file__).resolve().parent.parent / "docs" / "data"
 DEFAULT_ABSTRACT_CHARS = 300
 MAX_SHARD_AUTHORS = 10  # truncate long author lists in browse shards
+# notices ("Author Correction: <title>") repeat a paper's title but are not papers
+NOTICE_RE = re.compile(r"^\s*(author correction|publisher correction|correction|corrigendum|erratum|retraction)\b", re.I)
 
 
 def parse_authors(raw: object) -> list[str]:
@@ -110,6 +125,9 @@ def export_site(
     max_authors: int = MAX_SHARD_AUTHORS,
     topiced_only: bool = True,
     citations_dir: Path | str = CITATIONS_DIR,
+    ontology: dict | None = None,
+    applications: dict | None = None,
+    method_refs: dict | None = None,
 ) -> dict:
     """Write the site's JSON data files and return the manifest.
 
@@ -120,6 +138,9 @@ def export_site(
     long author lists to keep shard files lean. ``topiced_only`` (default) omits
     papers with no biology topic from the browse shards — they never match a topic
     filter and would only bloat the payload (trends still see them via the CSVs).
+    The method/application trees match **every** paper of every year (full
+    abstract, topic or not); ``ontology``/``applications``/``method_refs``
+    default to the ``config/`` files.
     """
     import pandas as pd
 
@@ -182,10 +203,13 @@ def export_site(
     for key, label, family, month, path in found:
         by_jy[(key, label, family, month[:4])].append((month, path))
 
+    ontology = ontology if ontology is not None else load_ontology()
+    applications = applications if applications is not None else load_ontology(DEFAULT_APPLICATIONS_PATH)
+    method_refs = method_refs if method_refs is not None else load_method_refs()
+    trees = [(filename, tree, compile_matcher(tree["domains"]), [])
+             for filename, tree in ((ONTOLOGY_FILENAME, ontology), (APPLICATIONS_FILENAME, applications))]
+
     for (key, label, family, year), items in sorted(by_jy.items()):
-        if year not in keep_years:
-            continue
-        rel = f"papers/{key}_{year}.json"
         # citation counts + rising delta, tracked per DOI (committed citations/ store)
         history = load_history(counts_path(key, year, citations_dir))
         counts_by_doi = {doi: latest_count(s) for doi, s in history.items()}
@@ -197,12 +221,18 @@ def export_site(
             for row in df.to_dict("records"):
                 rec = build_paper_record(row, label, family, month, abstract_chars,
                                          counts_by_doi, deltas_by_doi)
+                _match_trees(trees, rec, _text(row.get("abstract")), int(year))
+                if year not in keep_years:
+                    continue
                 if topiced_only and not rec["topics"]:
                     continue  # papers with no biology topic never match a topic browse
                 if len(rec["authors"]) > max_authors:
                     rec["authors"] = rec["authors"][:max_authors]
                 seen_topics.update(rec["topics"])
                 year_records.append(rec)
+        if year not in keep_years:
+            continue
+        rel = f"papers/{key}_{year}.json"
         (out_dir / rel).write_text(json.dumps(year_records, ensure_ascii=False), encoding="utf-8")
         shards.append({
             "journal": key, "label": label, "family": family,
@@ -231,4 +261,20 @@ def export_site(
     (out_dir / "manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False), encoding="utf-8"
     )
+    for filename, tree, _, matched in trees:
+        write_ontology(out_dir, site_ontology(tree, used_refs(tree, method_refs), matched), filename)
     return manifest
+
+
+def _match_trees(trees: list, rec: dict, abstract: str, year: int) -> None:
+    """Record ``rec``'s leaf hits (title + full abstract) in each tree's match list."""
+    if NOTICE_RE.match(rec["title"]):
+        return
+    paper = {"title": rec["title"], "journal": rec["journal"], "doi": rec["doi"],
+             "link": rec["link"], "year": year}
+    if "citations" in rec:
+        paper["citations"] = rec["citations"]
+    for _, _, matcher, matched in trees:
+        hits = match_leaves(matcher, rec["title"], abstract)
+        if hits:
+            matched.append((paper, hits))
