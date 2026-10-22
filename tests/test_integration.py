@@ -127,3 +127,44 @@ def test_export_site_attaches_tracked_citations(tmp_path):
     shard = json.loads((tmp_path / "site" / "papers" / "cell_2026.json").read_text())
     assert shard[0]["citations"] == 7
     assert shard[0]["rising"] == 5
+
+
+def _tree(name, keyword, example):
+    return {"domains": [{"name": name, "children": [
+        {"name": f"{name} family", "children": [{"name": f"{name} leaf", "keywords": [keyword],
+                                                  "examples": [example]}]}]}],
+            "facets": [], "heuristics": []}
+
+
+def test_export_site_writes_method_and_application_trees(tmp_path):
+    config_dir = tmp_path / "config"
+    data_dir = tmp_path / "data"
+    _make_config(config_dir)
+    cell = data_dir / "cell"
+    cell.mkdir(parents=True)
+    rows = {
+        "2025-11": {"title": "Old sol-gel films", "abstract": "", "doi": "10.1/old", "topic": ""},
+        "2026-01": {"title": "CRISPR battery", "abstract": "made by sol-gel route", "doi": "", "topic": "genome editing"},
+        "2026-02": {"title": "Author Correction: Sol-gel battery", "abstract": "", "doi": "", "topic": "genome editing"},
+    }
+    for month, row in rows.items():
+        pd.DataFrame([{**row, "journal": "Cell", "family": "Cell Press", "published_date": f"{month}-05",
+                       "link": "https://x/l", "authors": ""}]).to_csv(cell / f"{month}.csv_topics.csv", index=False)
+    refs = {"SG": {"title": "Sol-gel", "year": 1990}, "LIB": {"title": "Li-ion", "year": 1991}}
+
+    export_site(tmp_path / "site", taxonomy=Taxonomy.load(config_dir), registry=JournalRegistry.load(config_dir),
+                data_dir=data_dir, shard_years=1, ontology=_tree("Synthesis", "sol-gel", "SG"),
+                applications=_tree("Energy", "battery", "LIB"), method_refs=refs)
+
+    onto = json.loads((tmp_path / "site" / "ontology.json").read_text())
+    assert onto["methods"] == {"SG": refs["SG"]}
+    leaf = onto["domains"][0]["children"][0]["children"][0]
+    # the topic-less 2025 paper (outside shard_years) still counts; abstract hits count too
+    assert leaf["paper_count"] == 2
+    assert [g["year"] for g in leaf["papers"]] == [2026, 2025]
+    assert leaf["papers"][1]["papers"][0] == {"name": "Old sol-gel films", "title": "Old sol-gel films",
+                                              "journal": "Cell", "url": "https://doi.org/10.1/old"}
+    apps = json.loads((tmp_path / "site" / "applications.json").read_text())
+    assert apps["methods"] == {"LIB": refs["LIB"]}
+    assert apps["domains"][0]["paper_count"] == 1
+    assert apps["domains"][0]["children"][0]["children"][0]["papers"][0]["papers"][0]["url"] == "https://x/l"

@@ -1,0 +1,231 @@
+{
+  "version": "0.1",
+  "domains": [
+    {"code": "ESTO", "name": "Energy storage",
+     "summary": "Batteries, supercapacitors and the electrode, electrolyte and interface materials behind them.",
+     "children": [
+      {"name": "Lithium-ion & lithium-metal batteries", "children": [
+        {"name": "Cathode materials", "examples": ["LiCoO2 cathode", "LiFePO4"], "keywords": ["cathode material", "layered oxide cathode", "nickel-rich", "ni-rich", "lithium-rich", "li-rich", "lithium iron phosphate", "lifepo4", "high-voltage cathode"]},
+        {"name": "Anode materials (graphite, silicon)", "keywords": ["silicon anode", "graphite anode", "anode material", "si anode", "lithium titanate"]},
+        {"name": "Lithium-metal anodes", "examples": ["Li metal anode review", "Cryo-EM of Li dendrites"], "keywords": ["lithium metal anode", "lithium metal batteries", "li metal anode", "lithium dendrite", "dendrite-free", "anode-free"]},
+        {"name": "Liquid electrolytes & interphases", "keywords": ["electrolyte additive", "solid electrolyte interphase", "cathode electrolyte interphase", "localized high-concentration electrolyte", "high-concentration electrolyte", "^sei"]}
+      ]},
+      {"name": "Solid-state & beyond-lithium batteries", "children": [
+        {"name": "Solid-state electrolytes", "examples": ["LGPS", "LLZO"], "keywords": ["solid-state electrolyte", "solid electrolyte", "sulfide electrolyte", "garnet electrolyte", "polymer electrolyte", "halide electrolyte", "superionic"]},
+        {"name": "All-solid-state batteries", "keywords": ["all-solid-state", "solid-state batteries", "solid-state battery"]},
+        {"name": "Lithium–sulfur & metal–air", "examples": ["Li–S (Nazar)", "Li–O2 review"], "keywords": ["lithium-sulfur", "li-s batteries", "lithium–sulfur", "polysulfide", "lithium-oxygen", "li-o2", "zinc-air", "metal-air"]},
+        {"name": "Sodium- & potassium-ion", "examples": ["Na-ion review"], "keywords": ["sodium-ion", "na-ion", "potassium-ion", "k-ion", "sodium metal"]},
+        {"name": "Multivalent & aqueous batteries", "examples": ["Aqueous Zn-ion", "Water-in-salt"], "keywords": ["zinc-ion", "zn-ion", "aqueous zinc", "magnesium battery", "calcium battery", "aluminum battery", "aqueous battery", "water-in-salt"]}
+      ]},
+      {"name": "Capacitive & other storage", "children": [
+        {"name": "Supercapacitors", "examples": ["Supercapacitor review", "MXene supercapacitor"], "keywords": ["supercapacitor", "electrochemical capacitor", "pseudocapacitance", "pseudocapacitive", "micro-supercapacitor"]},
+        {"name": "Redox-flow batteries", "keywords": ["redox flow", "flow battery"]},
+        {"name": "Dielectric & thermal energy storage", "keywords": ["dielectric capacitor", "energy storage density", "phase change material", "thermal energy storage", "latent heat storage"]},
+        {"name": "Hydrogen storage", "keywords": ["hydrogen storage", "metal hydride", "hydrogen uptake"]},
+        {"name": "Battery recycling & lifetime", "examples": ["Li-ion battery recycling"], "keywords": ["battery recycling", "spent lithium", "cathode recycling", "direct recycling", "capacity fade", "battery degradation"]}
+      ]}
+    ]},
+    {"code": "ECONV", "name": "Energy conversion",
+     "summary": "Turning light, heat and motion into electricity or fuels: photovoltaics, fuel cells, thermoelectrics and harvesters.",
+     "children": [
+      {"name": "Photovoltaics", "children": [
+        {"name": "Perovskite solar cells", "examples": ["Perovskite PV (Kojima)", "Meso-superstructured perovskite"], "keywords": ["perovskite solar cell", "perovskite photovoltaic", "perovskite solar", "perovskite/silicon tandem", "all-perovskite tandem"]},
+        {"name": "Organic solar cells", "examples": ["Y6 acceptor", "Bulk heterojunction"], "keywords": ["organic solar cell", "organic photovoltaic", "non-fullerene acceptor", "polymer solar cell", "bulk heterojunction"]},
+        {"name": "Silicon, thin-film & tandem PV", "examples": ["Shockley–Queisser limit"], "keywords": ["silicon solar cell", "tandem solar cell", "kesterite", "cigs", "cdte solar", "heterojunction solar cell"]},
+        {"name": "Dye-sensitized & quantum-dot PV", "examples": ["Dye-sensitized cell"], "keywords": ["dye-sensitized", "quantum dot solar", "quantum-dot solar"]}
+      ]},
+      {"name": "Fuel cells & electrolyzers", "children": [
+        {"name": "Proton-exchange membrane fuel cells", "examples": ["Fe–N–C ORR", "Pt3Ni(111)"], "keywords": ["fuel cell", "proton exchange membrane", "proton-exchange membrane", "pemfc", "anion exchange membrane fuel"]},
+        {"name": "Solid-oxide cells", "keywords": ["solid oxide fuel cell", "solid oxide electrolysis", "protonic ceramic", "^sofc"]},
+        {"name": "Water electrolyzers", "keywords": ["water electrolysis", "electrolyzer", "electrolyser", "pem electrolyzer", "anion exchange membrane water"]}
+      ]},
+      {"name": "Thermal & mechanical harvesting", "children": [
+        {"name": "Thermoelectrics", "examples": ["SnSe thermoelectric"], "keywords": ["thermoelectric", "figure of merit", "seebeck"]},
+        {"name": "Triboelectric & piezoelectric nanogenerators", "examples": ["Triboelectric nanogenerator", "Piezoelectric nanogenerator"], "keywords": ["triboelectric", "nanogenerator", "piezoelectric energy harvesting", "energy harvesting", "energy harvester"]},
+        {"name": "Radiative cooling & thermal management", "examples": ["Daytime radiative cooling"], "keywords": ["radiative cooling", "daytime radiative", "thermal management", "personal thermal", "solar-thermal"]},
+        {"name": "Solar fuels & photoelectrochemistry", "examples": ["Fujishima–Honda"], "keywords": ["photoelectrochemical", "photoelectrode", "photoanode", "photocathode", "solar fuel", "artificial photosynthesis"]}
+      ]}
+    ]},
+    {"code": "CAT", "name": "Catalysis",
+     "summary": "Materials that accelerate chemical conversions: electro-, photo- and thermocatalysts for fuels, chemicals and clean air.",
+     "children": [
+      {"name": "Electrocatalysis", "children": [
+        {"name": "Hydrogen evolution", "examples": ["MoS2 HER edges"], "keywords": ["hydrogen evolution", "^her", "hydrogen production"]},
+        {"name": "Oxygen evolution & reduction", "examples": ["NiFe LDH OER", "Fe–N–C ORR", "Pt3Ni(111)"], "keywords": ["oxygen evolution", "oxygen reduction", "^oer", "^orr", "bifunctional oxygen"]},
+        {"name": "CO2 electroreduction", "examples": ["Cu CO2 reduction"], "keywords": ["co2 reduction", "co2 electroreduction", "carbon dioxide reduction", "co2rr", "co electroreduction"]},
+        {"name": "Nitrogen & nitrate electrochemistry", "keywords": ["nitrogen reduction", "nitrate reduction", "ammonia synthesis", "ammonia electrosynthesis", "urea synthesis", "c-n coupling"]},
+        {"name": "Organic & biomass electrosynthesis", "examples": ["Electrocatalysis review (Seh)"], "keywords": ["electrosynthesis", "electrochemical oxidation", "hydrogen peroxide production", "h2o2 production", "biomass upgrading", "electrooxidation"]}
+      ]},
+      {"name": "Photocatalysis", "children": [
+        {"name": "Photocatalytic water splitting", "examples": ["g-C3N4 photocatalyst"], "keywords": ["photocatalytic water splitting", "photocatalytic hydrogen", "overall water splitting", "photocatalytic h2"]},
+        {"name": "Photocatalytic CO2 & organic conversion", "keywords": ["photocatalytic co2", "photoreduction", "photocatalytic oxidation", "photoredox", "photocatalytic degradation", "photocatalyst"]},
+        {"name": "Plasmonic & photothermal catalysis", "keywords": ["plasmonic catalysis", "plasmon-driven", "hot carrier", "hot electron", "photothermal catalysis"]}
+      ]},
+      {"name": "Heterogeneous & thermal catalysis", "children": [
+        {"name": "Single-atom & cluster catalysts", "examples": ["Single-atom Pt1/FeOx"], "keywords": ["single-atom catalyst", "single atom catalyst", "single-atom", "atomically dispersed", "dual-atom", "subnanometer cluster"]},
+        {"name": "Supported metal & alloy catalysts", "examples": ["Carbothermal shock"], "keywords": ["heterogeneous catalysis", "supported metal", "metal-support interaction", "alloy catalyst", "high-entropy catalyst", "intermetallic catalyst"]},
+        {"name": "Zeolite & MOF catalysis", "keywords": ["zeolite", "mof catalyst", "porous catalyst", "shape-selective"]},
+        {"name": "C1 & hydrogenation chemistry", "keywords": ["co2 hydrogenation", "methane conversion", "methanol synthesis", "fischer-tropsch", "dry reforming", "selective hydrogenation", "propane dehydrogenation"]}
+      ]}
+    ]},
+    {"code": "ELEC", "name": "Electronics & photonics",
+     "summary": "Materials for logic, memory, displays, light emission and light control.",
+     "children": [
+      {"name": "Semiconductor & 2D electronics", "children": [
+        {"name": "2D-material transistors", "examples": ["MoS2 transistor", "Mechanical exfoliation"], "keywords": ["2d semiconductor", "two-dimensional semiconductor", "monolayer mos2", "transition metal dichalcogenide", "2d transistor", "2d materials"]},
+        {"name": "Oxide & thin-film transistors", "examples": ["Amorphous IGZO TFT"], "keywords": ["thin-film transistor", "oxide semiconductor", "igzo", "oxide transistor"]},
+        {"name": "Organic electronics", "keywords": ["organic semiconductor", "organic field-effect", "organic electrochemical transistor", "conjugated polymer", "organic electronics"]},
+        {"name": "Wide-bandgap & power electronics", "keywords": ["wide-bandgap", "wide bandgap", "gallium nitride", "silicon carbide", "gallium oxide", "power electronics", "ultrawide"]}
+      ]},
+      {"name": "Memory & neuromorphic", "children": [
+        {"name": "Memristors & resistive switching", "examples": ["Memristor"], "keywords": ["memristor", "memristive", "resistive switching", "resistive random access"]},
+        {"name": "Ferroelectric devices", "examples": ["Ferroelectric HfO2"], "keywords": ["ferroelectric memory", "ferroelectric hafnia", "hafnium oxide", "ferroelectric field-effect", "ferroelectric tunnel junction", "ferroelectric"]},
+        {"name": "Neuromorphic & in-memory computing", "keywords": ["neuromorphic", "artificial synapse", "synaptic", "in-memory computing", "reservoir computing"]},
+        {"name": "Phase-change memory", "keywords": ["phase-change memory", "phase change memory", "chalcogenide glass"]}
+      ]},
+      {"name": "Light emission & detection", "children": [
+        {"name": "OLEDs & TADF emitters", "examples": ["OLED (Tang & VanSlyke)", "TADF"], "keywords": ["organic light-emitting", "^oled", "thermally activated delayed fluorescence", "^tadf", "multiple resonance"]},
+        {"name": "Perovskite & quantum-dot LEDs", "examples": ["Perovskite LED", "Quantum-dot LED"], "keywords": ["perovskite light-emitting", "perovskite led", "quantum dot light-emitting", "quantum-dot light-emitting", "^qled", "electroluminescence"]},
+        {"name": "Photodetectors & imaging sensors", "keywords": ["photodetector", "photodetection", "x-ray detector", "x-ray scintillator", "scintillator", "image sensor"]},
+        {"name": "Lasers & luminescent materials", "keywords": ["lasing", "microlaser", "phosphor", "persistent luminescence", "upconversion", "afterglow"]}
+      ]},
+      {"name": "Photonics & optical materials", "children": [
+        {"name": "Metamaterials & metasurfaces", "examples": ["Negative-index metamaterial", "Perfect lens", "Metasurface (generalized Snell)"], "keywords": ["metamaterial", "metasurface", "negative refraction"]},
+        {"name": "Nanophotonics & plasmonics", "examples": ["Photonic crystal"], "keywords": ["plasmonic", "nanophotonic", "surface plasmon", "photonic crystal", "photonic integrated", "polariton"]},
+        {"name": "Nonlinear & integrated optics", "keywords": ["nonlinear optics", "lithium niobate", "frequency comb", "electro-optic", "optical modulator", "waveguide"]},
+        {"name": "Structural color & displays", "keywords": ["structural color", "structural colour", "electrochromic", "smart window", "display technology"]}
+      ]}
+    ]},
+    {"code": "QM", "name": "Quantum & magnetic materials",
+     "summary": "Correlated, topological, superconducting and magnetic materials and the devices they enable.",
+     "children": [
+      {"name": "Superconductivity", "children": [
+        {"name": "Unconventional & high-Tc superconductors", "examples": ["Iron-based superconductor"], "keywords": ["cuprate", "iron-based superconductor", "nickelate", "high-temperature superconductor", "unconventional superconductivity", "superconductivity", "superconductor"]},
+        {"name": "Hydride & pressure-induced superconductors", "examples": ["H3S superconductor"], "keywords": ["hydride superconductor", "superhydride", "pressure-induced superconductivity"]}
+      ]},
+      {"name": "Topological & correlated matter", "children": [
+        {"name": "Topological insulators & semimetals", "examples": ["Topological insulator (Bi1-xSbx)", "Bi2Se3 topological insulator", "Weyl semimetal TaAs", "Quantum anomalous Hall"], "keywords": ["topological insulator", "weyl semimetal", "dirac semimetal", "topological semimetal", "topological material", "quantum anomalous hall"]},
+        {"name": "Moiré & twisted 2D systems", "examples": ["Magic-angle graphene"], "keywords": ["moiré", "moire", "twisted bilayer", "magic-angle", "flat band", "fractional chern"]},
+        {"name": "Strongly correlated & quantum spin liquids", "keywords": ["strongly correlated", "quantum spin liquid", "heavy fermion", "charge density wave", "mott insulator", "kagome"]}
+      ]},
+      {"name": "Magnetism & spintronics", "children": [
+        {"name": "2D & van der Waals magnets", "examples": ["CrI3 2D magnet", "Cr2Ge2Te6 2D magnet"], "keywords": ["2d magnet", "van der waals magnet", "two-dimensional magnet", "2d ferromagnet", "layered magnet"]},
+        {"name": "Spintronics & spin–orbit torque", "examples": ["Spin Hall torque (Ta)"], "keywords": ["spintronic", "spin-orbit torque", "spin–orbit torque", "spin hall", "magnetic tunnel junction", "spin current", "altermagnet"]},
+        {"name": "Skyrmions & topological magnetism", "examples": ["Skyrmion lattice"], "keywords": ["skyrmion", "chiral magnet", "magnetic texture", "antiskyrmion"]},
+        {"name": "Permanent & soft magnets", "examples": ["Nd2Fe14B magnet"], "keywords": ["permanent magnet", "rare-earth magnet", "ndfeb", "soft magnetic", "magnetocaloric", "magnetostriction"]},
+        {"name": "Multiferroics & magnetoelectrics", "keywords": ["multiferroic", "magnetoelectric", "ferroelectric polarization", "polar vortex", "polar topology"]}
+      ]},
+      {"name": "Quantum information hardware", "children": [
+        {"name": "Spin qubits & color centers", "keywords": ["qubit", "spin defect", "nitrogen-vacancy", "color center", "quantum emitter", "single-photon source"]},
+        {"name": "Quantum sensing & materials for quantum devices", "keywords": ["quantum sensing", "quantum sensor", "quantum material", "quantum device", "majorana"]}
+      ]}
+    ]},
+    {"code": "BIO", "name": "Biomedical & healthcare",
+     "summary": "Materials that heal, deliver, sense and interface with the body.",
+     "children": [
+      {"name": "Tissue engineering & regeneration", "children": [
+        {"name": "Bone & cartilage regeneration", "examples": ["Bioglass"], "keywords": ["bone regeneration", "osteogenesis", "osteogenic", "bone defect", "cartilage regeneration", "osteoarthritis", "osseointegration", "bone repair"]},
+        {"name": "Wound healing & skin", "keywords": ["wound healing", "wound dressing", "diabetic wound", "skin regeneration", "hemostatic", "hemostasis"]},
+        {"name": "Cardiac, nerve & soft-tissue repair", "keywords": ["nerve regeneration", "myocardial infarction", "cardiac repair", "spinal cord injury", "muscle regeneration", "vascularization", "angiogenesis"]},
+        {"name": "Scaffolds & cell–material interactions", "examples": ["Matrix elasticity (Engler)"], "keywords": ["scaffold", "extracellular matrix", "mechanotransduction", "stem cell", "organoid", "immunomodulation", "macrophage polarization"]},
+        {"name": "Bioprinting & engineered tissues", "examples": ["3D bioprinting review"], "keywords": ["bioprinting", "bioink", "bioprinted", "tissue engineering", "tissue-engineered"]}
+      ]},
+      {"name": "Drug delivery & therapy", "children": [
+        {"name": "Nanomedicine & drug delivery", "examples": ["Nanocarriers review (Peer)"], "keywords": ["drug delivery", "nanomedicine", "nanocarrier", "controlled release", "targeted delivery", "drug release"]},
+        {"name": "Gene & mRNA delivery", "examples": ["Lipid nanoparticles review"], "keywords": ["lipid nanoparticle", "mrna delivery", "gene delivery", "sirna", "gene therapy", "crispr delivery"]},
+        {"name": "Cancer therapy (photothermal, photodynamic, immuno)", "keywords": ["photothermal therapy", "photodynamic therapy", "sonodynamic", "chemodynamic", "cancer immunotherapy", "tumor microenvironment", "antitumor", "tumor"]},
+        {"name": "Antibacterial & anti-infective materials", "keywords": ["antibacterial", "antimicrobial", "antibiofilm", "bacterial infection", "antiviral"]},
+        {"name": "Nanozymes & ROS-scavenging", "examples": ["Nanozyme (Fe3O4)"], "keywords": ["nanozyme", "enzyme-mimicking", "reactive oxygen species scavenging", "ros scavenging", "antioxidant"]}
+      ]},
+      {"name": "Biomaterials & bioelectronics", "children": [
+        {"name": "Hydrogels & bioadhesives", "examples": ["Double-network hydrogel", "Tough adhesive", "Polydopamine coating"], "keywords": ["hydrogel", "bioadhesive", "tissue adhesive", "wet adhesion", "adhesive hydrogel"]},
+        {"name": "Implants & biodegradable metals", "examples": ["Biodegradable Mg implant"], "keywords": ["implant", "biodegradable magnesium", "magnesium alloy implant", "zinc alloy", "orthopedic", "titanium implant", "biodegradable metal"]},
+        {"name": "Implantable & transient bioelectronics", "examples": ["Transient electronics"], "keywords": ["bioelectronic", "neural interface", "implantable electronics", "transient electronics", "bioresorbable", "neural probe"]},
+        {"name": "Biosensing & diagnostics", "keywords": ["biosensor", "biosensing", "point-of-care", "diagnostic", "biomarker detection"]},
+        {"name": "Bioimaging & theranostics", "keywords": ["bioimaging", "theranostic", "fluorescence imaging", "nir-ii", "photoacoustic imaging", "mri contrast"]}
+      ]}
+    ]},
+    {"code": "ENV", "name": "Environment, water & carbon",
+     "summary": "Materials for clean water, clean air, carbon capture and pollutant remediation.",
+     "children": [
+      {"name": "Water", "children": [
+        {"name": "Membranes for separation & desalination", "examples": ["GO membrane sieving", "Graphene desalination"], "keywords": ["membrane separation", "desalination", "reverse osmosis", "nanofiltration", "ion sieving", "molecular sieving", "separation membrane"]},
+        {"name": "Solar evaporation & water harvesting", "examples": ["Solar steam generation", "MOF water harvesting"], "keywords": ["solar evaporation", "interfacial evaporation", "solar steam", "atmospheric water harvesting", "water harvesting", "fog harvesting"]},
+        {"name": "Water treatment & pollutant removal", "keywords": ["water treatment", "wastewater", "heavy metal removal", "dye removal", "pfas", "adsorbent", "advanced oxidation"]}
+      ]},
+      {"name": "Carbon & air", "children": [
+        {"name": "CO2 capture & direct air capture", "examples": ["Cooperative CO2 capture MOF"], "keywords": ["co2 capture", "carbon capture", "direct air capture", "co2 adsorption", "co2 separation"]},
+        {"name": "Gas separation & storage", "keywords": ["gas separation", "hydrocarbon separation", "methane storage", "olefin/paraffin", "noble gas separation", "c2h2/co2"]},
+        {"name": "Air purification & VOC removal", "keywords": ["air purification", "air filtration", "particulate matter", "voc removal", "volatile organic compound"]}
+      ]},
+      {"name": "Resources & remediation", "children": [
+        {"name": "Uranium & critical-metal extraction", "keywords": ["uranium extraction", "lithium extraction", "seawater uranium", "critical metal", "rare earth separation", "metal recovery"]},
+        {"name": "Soil & environmental remediation", "keywords": ["remediation", "contaminant degradation", "environmental remediation", "microplastic"]}
+      ]}
+    ]},
+    {"code": "STRUC", "name": "Structural & extreme-environment materials",
+     "summary": "Load-bearing metals, ceramics and composites, and materials that survive heat, radiation and corrosion.",
+     "children": [
+      {"name": "Strong & tough metals", "children": [
+        {"name": "High-entropy & complex alloys", "examples": ["High-entropy alloy (Yeh)", "Cantor alloy"], "keywords": ["high-entropy alloy", "medium-entropy alloy", "multi-principal element alloy", "complex concentrated alloy", "compositionally complex"]},
+        {"name": "Steels & Ti/Al/Mg alloys", "examples": ["Printable high-strength Al"], "keywords": ["steel", "titanium alloy", "aluminum alloy", "aluminium alloy", "magnesium alloy", "superalloy"]},
+        {"name": "Strength–ductility via microstructure", "examples": ["Gradient nano-grained Cu", "Nanotwinned Cu"], "keywords": ["strength-ductility", "strength and ductility", "gradient structure", "nanotwin", "heterogeneous structure", "grain refinement", "work hardening", "strain hardening"]},
+        {"name": "Metallic glasses", "examples": ["Metallic glass (Au–Si)"], "keywords": ["metallic glass", "bulk metallic glass", "amorphous alloy"]}
+      ]},
+      {"name": "Ceramics, composites & architected materials", "children": [
+        {"name": "Structural ceramics & glasses", "keywords": ["structural ceramic", "ultra-high temperature ceramic", "high-entropy ceramic", "toughened ceramic", "oxide glass", "silicate glass"]},
+        {"name": "Fiber-reinforced & nanocomposites", "keywords": ["fiber-reinforced", "carbon fiber", "nanocomposite", "polymer composite", "ceramic matrix composite"]},
+        {"name": "Bioinspired & hierarchical structures", "examples": ["Bioinspired nacre"], "keywords": ["bioinspired", "bio-inspired", "nacre", "hierarchical structure", "biomimetic structure"]},
+        {"name": "Mechanical metamaterials & lattices", "examples": ["Ultralight mechanical metamaterial"], "keywords": ["mechanical metamaterial", "lattice structure", "architected material", "auxetic", "truss lattice", "negative poisson"]}
+      ]},
+      {"name": "Extreme environments", "children": [
+        {"name": "High-temperature & thermal-barrier materials", "keywords": ["high-temperature oxidation", "thermal barrier coating", "refractory alloy", "refractory high-entropy", "creep resistance"]},
+        {"name": "Nuclear & radiation-tolerant materials", "keywords": ["nuclear material", "radiation tolerance", "irradiation damage", "fusion reactor", "nuclear fuel", "plasma-facing"]},
+        {"name": "Corrosion & protective coatings", "keywords": ["corrosion", "anticorrosion", "anti-corrosion", "protective coating", "wear resistance", "tribology", "tribological"]},
+        {"name": "Hydrogen embrittlement", "keywords": ["hydrogen embrittlement", "hydrogen-induced cracking", "hydrogen trapping"]}
+      ]}
+    ]},
+    {"code": "SOFT", "name": "Soft, wearable & robotic materials",
+     "summary": "Stretchable, responsive and adaptive materials for wearables, soft machines and human–machine interfaces.",
+     "children": [
+      {"name": "Wearables & flexible electronics", "children": [
+        {"name": "Flexible & stretchable electronics", "keywords": ["stretchable electronics", "flexible electronics", "stretchable conductor", "liquid metal", "skin-like", "epidermal electronics"]},
+        {"name": "Wearable sensors & health monitoring", "examples": ["Wearable sweat sensor"], "keywords": ["wearable sensor", "wearable", "sweat", "health monitoring", "physiological signal", "strain sensor", "pressure sensor"]},
+        {"name": "Electronic & ionic skin", "examples": ["Ionic skin"], "keywords": ["electronic skin", "e-skin", "ionic skin", "iontronic", "tactile sensor"]},
+        {"name": "Smart textiles & fibers", "keywords": ["smart textile", "electronic textile", "e-textile", "fiber electronics", "functional fiber"]}
+      ]},
+      {"name": "Soft robotics & actuators", "children": [
+        {"name": "Soft robots & actuators", "examples": ["Multigait soft robot", "Octobot"], "keywords": ["soft robot", "soft robotics", "soft actuator", "artificial muscle", "actuator"]},
+        {"name": "Magnetic & light-driven microrobots", "examples": ["Ferromagnetic soft robot"], "keywords": ["microrobot", "magnetic actuation", "magnetically actuated", "light-driven actuator", "micromotor", "nanorobot"]},
+        {"name": "Liquid crystal elastomers & shape-memory", "keywords": ["liquid crystal elastomer", "liquid crystalline elastomer", "shape memory polymer", "shape-memory", "stimuli-responsive"]}
+      ]},
+      {"name": "Adaptive & self-healing polymers", "children": [
+        {"name": "Self-healing & dynamic networks", "examples": ["Self-healing polymer", "Vitrimer"], "keywords": ["self-healing", "dynamic covalent", "vitrimer", "covalent adaptable network", "reprocessable"]},
+        {"name": "Tough elastomers & gels", "examples": ["Double-network hydrogel"], "keywords": ["tough hydrogel", "elastomer", "ionogel", "organogel", "fatigue-resistant"]},
+        {"name": "Adhesives & interfaces", "keywords": ["adhesive", "adhesion", "dry adhesive", "underwater adhesion"]}
+      ]},
+      {"name": "Sensing & detection", "children": [
+        {"name": "Gas & chemical sensors", "keywords": ["gas sensor", "gas sensing", "chemical sensor", "chemiresistive", "electronic nose"]},
+        {"name": "Human–machine interfaces", "keywords": ["human-machine interface", "human–machine interface", "haptic", "brain-computer interface", "virtual reality"]}
+      ]}
+    ]},
+    {"code": "SUS", "name": "Sustainability & circularity",
+     "summary": "Renewable, recyclable and low-carbon materials and processes.",
+     "children": [
+      {"name": "Plastics & polymer circularity", "children": [
+        {"name": "Chemical recycling & upcycling", "examples": ["Enzymatic PET depolymerization", "Closed-loop PDK", "Polyethylene upcycling"], "keywords": ["chemical recycling", "upcycling", "depolymerization", "plastic waste", "closed-loop recycling", "plastic recycling"]},
+        {"name": "Biodegradable & bio-based polymers", "keywords": ["biodegradable polymer", "biodegradable plastic", "bio-based", "biobased", "polylactic acid", "polyhydroxyalkanoate", "compostable"]}
+      ]},
+      {"name": "Renewable & natural materials", "children": [
+        {"name": "Wood, cellulose & lignin", "examples": ["Densified wood"], "keywords": ["wood", "cellulose", "nanocellulose", "lignin", "chitin", "chitosan"]},
+        {"name": "Biomass-derived carbons", "keywords": ["biomass-derived", "biochar", "biomass carbon", "waste-derived"]},
+        {"name": "Silk, protein & living materials", "keywords": ["silk fibroin", "protein-based material", "engineered living material", "living material", "mycelium"]}
+      ]},
+      {"name": "Low-carbon production", "children": [
+        {"name": "Green steel & low-carbon metallurgy", "keywords": ["green steel", "hydrogen reduction", "hydrogen-based direct reduction", "low-carbon metallurgy", "electrowinning", "sustainable metallurgy"]},
+        {"name": "Cement & construction materials", "keywords": ["cement", "concrete", "geopolymer", "construction material", "building material"]},
+        {"name": "Critical-material substitution & life-cycle", "keywords": ["life cycle assessment", "life-cycle assessment", "techno-economic", "critical materials", "rare-earth-free", "cobalt-free", "earth-abundant"]}
+      ]}
+    ]}
+  ]
+}

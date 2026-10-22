@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Method Tree · Materials Trends in Journals</title>
+  <meta name="description" content="A hierarchical map of materials-science methods — synthesis, thin films, fabrication, characterization, spectroscopy, microscopy, testing, computation, and data-driven discovery — with landmark papers and the top papers for each." />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-icon" href="assets/logo.png" />
+  <link rel="preload" href="data/ontology.json" as="fetch" crossorigin />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap site-head__inner">
+      <a class="brand" href="index.html">
+        <img class="brand__logo" src="assets/logo.png" width="32" height="32" alt="" aria-hidden="true" />
+        <span class="brand__text">Materials&nbsp;Trends<span class="brand__dim">/journals</span></span>
+      </a>
+      <nav class="nav" aria-label="Sections">
+        <a href="index.html#trends">Topic Trends</a>
+        <a href="index.html#browse">Rising Stars</a>
+        <a href="methods.html" aria-current="page">Method Tree</a>
+        <a href="applications.html">Application Tree</a>
+        <a class="nav__ext" href="https://github.com/charlesxu90/Mater-trends" rel="noopener">Source ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="section" aria-label="Method tree">
+      <div class="wrap">
+        <div class="tree-view" id="tree-view" aria-live="polite">
+          <p class="loading">Loading method tree…</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="guide" aria-labelledby="guide-h">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 id="guide-h" class="section__title">How to classify a paper</h2>
+          <p class="section__hint">Pick one primary method node and up to two secondary nodes, then add cross-cutting tags for material class, length scale, conditions, and contribution form.</p>
+        </div>
+        <div class="guide">
+          <div>
+            <h3 class="col__h">Heuristics</h3>
+            <ol class="guide__list" id="guide-heuristics"></ol>
+          </div>
+          <div>
+            <h3 class="col__h">Cross-cutting tags</h3>
+            <div class="facets" id="guide-facets"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap site-foot__inner">
+      <p>The method tree is curated in <code>config/ontology.json</code>. Papers are matched to methods by keywords in their title and abstract and ranked by citations; a paper can appear under several methods.</p>
+      <p class="site-foot__meta">Mater-trend · sibling of Bio-trend</p>
+    </div>
+  </footer>
+
+  <script src="assets/methods.js" defer></script>
+</body>
+</html>

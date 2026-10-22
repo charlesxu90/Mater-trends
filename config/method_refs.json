@@ -1,0 +1,917 @@
+{
+ "3D bioprinting review": {
+  "title": "3D bioprinting of tissues and organs",
+  "year": 2014,
+  "url": "https://doi.org/10.1038/nbt.2958"
+ },
+ "3ω method": {
+  "title": "Thermal conductivity measurement from 30 to 750 K: the 3ω method",
+  "year": 1990,
+  "url": "https://doi.org/10.1063/1.1141498"
+ },
+ "4D printing": {
+  "title": "Biomimetic 4D printing",
+  "year": 2016,
+  "url": "https://doi.org/10.1038/nmat4544"
+ },
+ "A-Lab": {
+  "title": "An autonomous laboratory for the accelerated synthesis of inorganic materials",
+  "year": 2023,
+  "url": "https://doi.org/10.1038/s41586-023-06734-w"
+ },
+ "Aberration-corrected TEM": {
+  "title": "Electron microscopy image enhanced",
+  "year": 1998,
+  "url": "https://doi.org/10.1038/33823"
+ },
+ "Ada": {
+  "title": "Self-driving laboratory for accelerated discovery of thin-film materials",
+  "year": 2020,
+  "url": "https://doi.org/10.1126/sciadv.aaz8867"
+ },
+ "AFLOW": {
+  "title": "AFLOW: An automatic framework for high-throughput materials discovery",
+  "year": 2012,
+  "url": "https://doi.org/10.1016/j.commatsci.2012.02.005"
+ },
+ "AFM": {
+  "title": "Atomic Force Microscope",
+  "year": 1986,
+  "url": "https://doi.org/10.1103/physrevlett.56.930"
+ },
+ "ALD review (George)": {
+  "title": "Atomic Layer Deposition: An Overview",
+  "year": 2010,
+  "url": "https://doi.org/10.1021/cr900056b"
+ },
+ "Amorphous IGZO TFT": {
+  "title": "Room-temperature fabrication of transparent flexible thin-film transistors using amorphous oxide semiconductors",
+  "year": 2004,
+  "url": "https://doi.org/10.1038/nature03090"
+ },
+ "Antisolvent spin coating": {
+  "title": "Solvent engineering for high-performance inorganic–organic hybrid perovskite solar cells",
+  "year": 2014,
+  "url": "https://doi.org/10.1038/nmat4014"
+ },
+ "Aqueous Zn-ion": {
+  "title": "Reversible aqueous zinc/manganese oxide energy storage from conversion reactions",
+  "year": 2016,
+  "url": "https://doi.org/10.1038/nenergy.2016.39"
+ },
+ "ARPES review": {
+  "title": "Angle-resolved photoemission studies of the cuprate superconductors",
+  "year": 2003,
+  "url": "https://doi.org/10.1103/revmodphys.75.473"
+ },
+ "Atom probe tomography": {
+  "title": "Atom probe tomography",
+  "year": 2007,
+  "url": "https://doi.org/10.1063/1.2709758"
+ },
+ "Bader analysis": {
+  "title": "A fast and robust algorithm for Bader decomposition of charge density",
+  "year": 2006,
+  "url": "https://doi.org/10.1016/j.commatsci.2005.04.010"
+ },
+ "Behler–Parrinello": {
+  "title": "Generalized Neural-Network Representation of High-Dimensional Potential-Energy Surfaces",
+  "year": 2007,
+  "url": "https://doi.org/10.1103/physrevlett.98.146401"
+ },
+ "Bi2Se3 topological insulator": {
+  "title": "Topological insulators in Bi2Se3, Bi2Te3 and Sb2Te3 with a single Dirac cone on the surface",
+  "year": 2009,
+  "url": "https://doi.org/10.1038/nphys1270"
+ },
+ "Biodegradable Mg implant": {
+  "title": "In vivo corrosion of four magnesium alloys and the associated bone response",
+  "year": 2005,
+  "url": "https://doi.org/10.1016/j.biomaterials.2004.09.049"
+ },
+ "Bioglass": {
+  "title": "Bonding mechanisms at the interface of ceramic prosthetic materials",
+  "year": 1971,
+  "url": "https://doi.org/10.1002/jbm.820050611"
+ },
+ "Bioinspired nacre": {
+  "title": "Tough, Bio-Inspired Hybrid Materials",
+  "year": 2008,
+  "url": "https://doi.org/10.1126/science.1164865"
+ },
+ "BoltzTraP": {
+  "title": "BoltzTraP. A code for calculating band-structure dependent quantities",
+  "year": 2006,
+  "url": "https://doi.org/10.1016/j.cpc.2006.03.007"
+ },
+ "Brust–Schiffrin": {
+  "title": "Synthesis of thiol-derivatised gold nanoparticles in a two-phase Liquid–Liquid system",
+  "year": 1994,
+  "url": "https://doi.org/10.1039/c39940000801"
+ },
+ "Bulk heterojunction": {
+  "title": "Polymer Photovoltaic Cells: Enhanced Efficiencies via a Network of Internal Donor-Acceptor Heterojunctions",
+  "year": 1995,
+  "url": "https://doi.org/10.1126/science.270.5243.1789"
+ },
+ "Cantor alloy": {
+  "title": "Microstructural development in equiatomic multicomponent alloys",
+  "year": 2004,
+  "url": "https://doi.org/10.1016/j.msea.2003.10.257"
+ },
+ "Carbothermal shock": {
+  "title": "Carbothermal shock synthesis of high-entropy-alloy nanoparticles",
+  "year": 2018,
+  "url": "https://doi.org/10.1126/science.aan5412"
+ },
+ "CGCNN": {
+  "title": "Crystal Graph Convolutional Neural Networks for an Accurate and Interpretable Prediction of Material Properties",
+  "year": 2018,
+  "url": "https://doi.org/10.1103/physrevlett.120.145301"
+ },
+ "ChemCrow": {
+  "title": "Augmenting large language models with chemistry tools",
+  "year": 2024,
+  "url": "https://doi.org/10.1038/s42256-024-00832-8"
+ },
+ "CHGNet": {
+  "title": "CHGNet as a pretrained universal neural network potential for charge-informed atomistic modelling",
+  "year": 2023,
+  "url": "https://doi.org/10.1038/s42256-023-00716-3"
+ },
+ "CI-NEB": {
+  "title": "A climbing image nudged elastic band method for finding saddle points and minimum energy paths",
+  "year": 2000,
+  "url": "https://doi.org/10.1063/1.1329672"
+ },
+ "CLIP": {
+  "title": "Continuous liquid interface production of 3D objects",
+  "year": 2015,
+  "url": "https://doi.org/10.1126/science.aaa2397"
+ },
+ "Closed-loop PDK": {
+  "title": "Closed-loop recycling of plastics enabled by dynamic covalent diketoenamine bonds",
+  "year": 2019,
+  "url": "https://doi.org/10.1038/s41557-019-0249-2"
+ },
+ "COF-1": {
+  "title": "Porous, Crystalline, Covalent Organic Frameworks",
+  "year": 2005,
+  "url": "https://doi.org/10.1126/science.1120411"
+ },
+ "Cold sintering": {
+  "title": "Cold Sintering: A Paradigm Shift for Processing and Integration of Ceramics",
+  "year": 2016,
+  "url": "https://doi.org/10.1002/anie.201605443"
+ },
+ "Computational hydrogen electrode": {
+  "title": "Origin of the Overpotential for Oxygen Reduction at a Fuel-Cell Cathode",
+  "year": 2004,
+  "url": "https://doi.org/10.1021/jp047349j"
+ },
+ "Cooperative CO2 capture MOF": {
+  "title": "Cooperative insertion of CO2 in diamine-appended metal-organic frameworks",
+  "year": 2015,
+  "url": "https://doi.org/10.1038/nature14327"
+ },
+ "Coscientist": {
+  "title": "Autonomous chemical research with large language models",
+  "year": 2023,
+  "url": "https://doi.org/10.1038/s41586-023-06792-0"
+ },
+ "Cr2Ge2Te6 2D magnet": {
+  "title": "Discovery of intrinsic ferromagnetism in two-dimensional van der Waals crystals",
+  "year": 2017,
+  "url": "https://doi.org/10.1038/nature22060"
+ },
+ "CrI3 2D magnet": {
+  "title": "Layer-dependent ferromagnetism in a van der Waals crystal down to the monolayer limit",
+  "year": 2017,
+  "url": "https://doi.org/10.1038/nature22391"
+ },
+ "Cryo-EM of Li dendrites": {
+  "title": "Atomic structure of sensitive battery materials and interfaces revealed by cryo–electron microscopy",
+  "year": 2017,
+  "url": "https://doi.org/10.1126/science.aam6014"
+ },
+ "Cu CO2 reduction": {
+  "title": "New insights into the electrochemical reduction of carbon dioxide on metallic copper surfaces",
+  "year": 2012,
+  "url": "https://doi.org/10.1039/c2ee21234j"
+ },
+ "CVD graphene on Cu": {
+  "title": "Large-Area Synthesis of High-Quality and Uniform Graphene Films on Copper Foils",
+  "year": 2009,
+  "url": "https://doi.org/10.1126/science.1171245"
+ },
+ "Daytime radiative cooling": {
+  "title": "Passive radiative cooling below ambient air temperature under direct sunlight",
+  "year": 2014,
+  "url": "https://doi.org/10.1038/nature13883"
+ },
+ "Densified wood": {
+  "title": "Processing bulk natural wood into a high-performance structural material",
+  "year": 2018,
+  "url": "https://doi.org/10.1038/nature25476"
+ },
+ "DFT+U (Dudarev)": {
+  "title": "Electron-energy-loss spectra and the structural stability of nickel oxide: An LSDA+U study",
+  "year": 1998,
+  "url": "https://doi.org/10.1103/physrevb.57.1505"
+ },
+ "DFT-D3": {
+  "title": "A consistent and accurate ab initio parametrization of density functional dispersion correction (DFT-D) for the 94 elements H-Pu",
+  "year": 2010,
+  "url": "https://doi.org/10.1063/1.3382344"
+ },
+ "Dip-pen nanolithography": {
+  "title": "\"Dip-Pen\" Nanolithography",
+  "year": 1999,
+  "url": "https://doi.org/10.1126/science.283.5402.661"
+ },
+ "Direct ink writing": {
+  "title": "Direct Ink Writing of 3D Functional Materials",
+  "year": 2006,
+  "url": "https://doi.org/10.1002/adfm.200600434"
+ },
+ "Double-network hydrogel": {
+  "title": "Double‐Network Hydrogels with Extremely High Mechanical Strength",
+  "year": 2003,
+  "url": "https://doi.org/10.1002/adma.200304907"
+ },
+ "Dye-sensitized cell": {
+  "title": "A low-cost, high-efficiency solar cell based on dye-sensitized colloidal TiO2 films",
+  "year": 1991,
+  "url": "https://doi.org/10.1038/353737a0"
+ },
+ "EAM": {
+  "title": "Embedded-atom method: Derivation and application to impurities, surfaces, and other defects in metals",
+  "year": 1984,
+  "url": "https://doi.org/10.1103/physrevb.29.6443"
+ },
+ "Electrocatalysis review (Seh)": {
+  "title": "Combining theory and experiment in electrocatalysis: Insights into materials design",
+  "year": 2017,
+  "url": "https://doi.org/10.1126/science.aad4998"
+ },
+ "Electron ptychography": {
+  "title": "Electron ptychography of 2D materials to deep sub-ångström resolution",
+  "year": 2018,
+  "url": "https://doi.org/10.1038/s41586-018-0298-5"
+ },
+ "Electrospinning (Li & Xia)": {
+  "title": "Electrospinning of Nanofibers: Reinventing the Wheel?",
+  "year": 2004,
+  "url": "https://doi.org/10.1002/adma.200400719"
+ },
+ "Enzymatic PET depolymerization": {
+  "title": "An engineered PET depolymerase to break down and recycle plastic bottles",
+  "year": 2020,
+  "url": "https://doi.org/10.1038/s41586-020-2149-4"
+ },
+ "EXAFS (Sayers, Stern, Lytle)": {
+  "title": "New Technique for Investigating Noncrystalline Structures: Fourier Analysis of the Extended X-Ray—Absorption Fine Structure",
+  "year": 1971,
+  "url": "https://doi.org/10.1103/physrevlett.27.1204"
+ },
+ "Ferroelectric HfO2": {
+  "title": "Ferroelectricity in hafnium oxide thin films",
+  "year": 2011,
+  "url": "https://doi.org/10.1063/1.3634052"
+ },
+ "Ferromagnetic soft robot": {
+  "title": "Printing ferromagnetic domains for untethered fast-transforming soft materials",
+  "year": 2018,
+  "url": "https://doi.org/10.1038/s41586-018-0185-0"
+ },
+ "Fe–N–C ORR": {
+  "title": "Iron-Based Catalysts with Improved Oxygen Reduction Activity in Polymer Electrolyte Fuel Cells",
+  "year": 2009,
+  "url": "https://doi.org/10.1126/science.1170051"
+ },
+ "Flash Joule heating": {
+  "title": "Gram-scale bottom-up flash graphene synthesis",
+  "year": 2020,
+  "url": "https://doi.org/10.1038/s41586-020-1938-0"
+ },
+ "Fujishima–Honda": {
+  "title": "Electrochemical Photolysis of Water at a Semiconductor Electrode",
+  "year": 1972,
+  "url": "https://doi.org/10.1038/238037a0"
+ },
+ "g-C3N4 photocatalyst": {
+  "title": "A metal-free polymeric photocatalyst for hydrogen production from water under visible light",
+  "year": 2009,
+  "url": "https://doi.org/10.1038/nmat2317"
+ },
+ "GAP": {
+  "title": "Gaussian Approximation Potentials: The Accuracy of Quantum Mechanics, without the Electrons",
+  "year": 2010,
+  "url": "https://doi.org/10.1103/physrevlett.104.136403"
+ },
+ "GITT": {
+  "title": "Determination of the Kinetic Parameters of Mixed‐Conducting Electrodes and Application to the System Li3Sb",
+  "year": 1977,
+  "url": "https://doi.org/10.1149/1.2133112"
+ },
+ "GNoME": {
+  "title": "Scaling deep learning for materials discovery",
+  "year": 2023,
+  "url": "https://doi.org/10.1038/s41586-023-06735-9"
+ },
+ "GO membrane sieving": {
+  "title": "Precise and Ultrafast Molecular Sieving Through Graphene Oxide Membranes",
+  "year": 2014,
+  "url": "https://doi.org/10.1126/science.1245711"
+ },
+ "Gradient nano-grained Cu": {
+  "title": "Revealing Extraordinary Intrinsic Tensile Plasticity in Gradient Nano-Grained Copper",
+  "year": 2011,
+  "url": "https://doi.org/10.1126/science.1200177"
+ },
+ "Graphene desalination": {
+  "title": "Water Desalination across Nanoporous Graphene",
+  "year": 2012,
+  "url": "https://doi.org/10.1021/nl3012853"
+ },
+ "GW (Hybertsen–Louie)": {
+  "title": "Electron correlation in semiconductors and insulators: Band gaps and quasiparticle energies",
+  "year": 1986,
+  "url": "https://doi.org/10.1103/physrevb.34.5390"
+ },
+ "H3S superconductor": {
+  "title": "Conventional superconductivity at 203 kelvin at high pressures in the sulfur hydride system",
+  "year": 2015,
+  "url": "https://doi.org/10.1038/nature14964"
+ },
+ "High-entropy alloy (Yeh)": {
+  "title": "Nanostructured High‐Entropy Alloys with Multiple Principal Elements: Novel Alloy Design Concepts and Outcomes",
+  "year": 2004,
+  "url": "https://doi.org/10.1002/adem.200300567"
+ },
+ "Hohenberg–Kohn": {
+  "title": "Inhomogeneous Electron Gas",
+  "year": 1964,
+  "url": "https://doi.org/10.1103/physrev.136.b864"
+ },
+ "Hot injection (Murray et al.)": {
+  "title": "Synthesis and characterization of nearly monodisperse CdE (E = sulfur, selenium, tellurium) semiconductor nanocrystallites",
+  "year": 1993,
+  "url": "https://doi.org/10.1021/ja00072a025"
+ },
+ "HSE": {
+  "title": "Hybrid functionals based on a screened Coulomb potential",
+  "year": 2003,
+  "url": "https://doi.org/10.1063/1.1564060"
+ },
+ "Hummers' method": {
+  "title": "Preparation of Graphitic Oxide",
+  "year": 1958,
+  "url": "https://doi.org/10.1021/ja01539a017"
+ },
+ "Inverse design review": {
+  "title": "Inverse molecular design using machine learning: Generative models for matter engineering",
+  "year": 2018,
+  "url": "https://doi.org/10.1126/science.aat2663"
+ },
+ "Ionic skin": {
+  "title": "Ionic skin",
+  "year": 2014,
+  "url": "https://doi.org/10.1002/adma.201403441"
+ },
+ "Iron-based superconductor": {
+  "title": "Iron-Based Layered Superconductor La[O1- x F x ]FeAs ( x = 0.05−0.12) with Tc = 26 K",
+  "year": 2008,
+  "url": "https://doi.org/10.1021/ja800073m"
+ },
+ "Kelvin probe force microscopy": {
+  "title": "Kelvin probe force microscopy",
+  "year": 1991,
+  "url": "https://doi.org/10.1063/1.105227"
+ },
+ "Kohn–Sham": {
+  "title": "Self-Consistent Equations Including Exchange and Correlation Effects",
+  "year": 1965,
+  "url": "https://doi.org/10.1103/physrev.140.a1133"
+ },
+ "LAMMPS": {
+  "title": "Fast Parallel Algorithms for Short-Range Molecular Dynamics",
+  "year": 1995,
+  "url": "https://doi.org/10.1006/jcph.1995.1039"
+ },
+ "Laser flash": {
+  "title": "Flash Method of Determining Thermal Diffusivity, Heat Capacity, and Thermal Conductivity",
+  "year": 1961,
+  "url": "https://doi.org/10.1063/1.1728417"
+ },
+ "LGPS": {
+  "title": "A lithium superionic conductor",
+  "year": 2011,
+  "url": "https://doi.org/10.1038/nmat3066"
+ },
+ "Li metal anode review": {
+  "title": "Reviving the lithium metal anode for high-energy batteries",
+  "year": 2017,
+  "url": "https://doi.org/10.1038/nnano.2017.16"
+ },
+ "Li-ion battery recycling": {
+  "title": "Recycling lithium-ion batteries from electric vehicles",
+  "year": 2019,
+  "url": "https://doi.org/10.1038/s41586-019-1682-5"
+ },
+ "LiCoO2 cathode": {
+  "title": "LixCoO2 (0<x<-1): A new cathode material for batteries of high energy density",
+  "year": 1980,
+  "url": "https://doi.org/10.1016/0025-5408(80)90012-4"
+ },
+ "LiFePO4": {
+  "title": "Phospho‐olivines as Positive‐Electrode Materials for Rechargeable Lithium Batteries",
+  "year": 1997,
+  "url": "https://doi.org/10.1149/1.1837571"
+ },
+ "Lipid nanoparticles review": {
+  "title": "Lipid nanoparticles for mRNA delivery",
+  "year": 2021,
+  "url": "https://doi.org/10.1038/s41578-021-00358-0"
+ },
+ "Liquid-cell TEM growth": {
+  "title": "Observation of Single Colloidal Platinum Nanocrystal Growth Trajectories",
+  "year": 2009,
+  "url": "https://doi.org/10.1126/science.1172104"
+ },
+ "Liquid-phase exfoliation": {
+  "title": "High-yield production of graphene by liquid-phase exfoliation of graphite",
+  "year": 2008,
+  "url": "https://doi.org/10.1038/nnano.2008.215"
+ },
+ "Li–O2 review": {
+  "title": "Li–O2 and Li–S batteries with high energy storage",
+  "year": 2012,
+  "url": "https://doi.org/10.1038/nmat3191"
+ },
+ "Li–S (Nazar)": {
+  "title": "A highly ordered nanostructured carbon–sulphur cathode for lithium–sulphur batteries",
+  "year": 2009,
+  "url": "https://doi.org/10.1038/nmat2460"
+ },
+ "LLZO": {
+  "title": "Fast Lithium Ion Conduction in Garnet‐Type Li7 La3 Zr2 O12",
+  "year": 2007,
+  "url": "https://doi.org/10.1002/anie.200701144"
+ },
+ "M3GNet": {
+  "title": "A universal graph deep learning interatomic potential for the periodic table",
+  "year": 2022,
+  "url": "https://doi.org/10.1038/s43588-022-00349-3"
+ },
+ "Magic-angle graphene": {
+  "title": "Unconventional superconductivity in magic-angle graphene superlattices",
+  "year": 2018,
+  "url": "https://doi.org/10.1038/nature26160"
+ },
+ "Magic-angle spinning NMR": {
+  "title": "Nuclear Magnetic Resonance Spectra from a Crystal rotated at High Speed",
+  "year": 1958,
+  "url": "https://doi.org/10.1038/1821659a0"
+ },
+ "Matbench": {
+  "title": "Benchmarking materials property prediction methods: the Matbench test set and Automatminer reference algorithm",
+  "year": 2020,
+  "url": "https://doi.org/10.1038/s41524-020-00406-3"
+ },
+ "Materials Project": {
+  "title": "Commentary: The Materials Project: A materials genome approach to accelerating materials innovation",
+  "year": 2013,
+  "url": "https://doi.org/10.1063/1.4812323"
+ },
+ "Matrix elasticity (Engler)": {
+  "title": "Matrix Elasticity Directs Stem Cell Lineage Specification",
+  "year": 2006,
+  "url": "https://doi.org/10.1016/j.cell.2006.06.044"
+ },
+ "MatterGen": {
+  "title": "A generative model for inorganic materials design",
+  "year": 2025,
+  "url": "https://doi.org/10.1038/s41586-025-08628-5"
+ },
+ "MCM-41": {
+  "title": "Ordered mesoporous molecular sieves synthesized by a liquid-crystal template mechanism",
+  "year": 1992,
+  "url": "https://doi.org/10.1038/359710a0"
+ },
+ "Mechanical exfoliation": {
+  "title": "Electric Field Effect in Atomically Thin Carbon Films",
+  "year": 2004,
+  "url": "https://doi.org/10.1126/science.1102896"
+ },
+ "Mechanochemistry review": {
+  "title": "Mechanochemistry: opportunities for new and cleaner synthesis",
+  "year": 2012,
+  "url": "https://doi.org/10.1039/c1cs15171a"
+ },
+ "MEGNet": {
+  "title": "Graph Networks as a Universal Machine Learning Framework for Molecules and Crystals",
+  "year": 2019,
+  "url": "https://doi.org/10.1021/acs.chemmater.9b01294"
+ },
+ "Memristor": {
+  "title": "The missing memristor found",
+  "year": 2008,
+  "url": "https://doi.org/10.1038/nature06932"
+ },
+ "Meso-superstructured perovskite": {
+  "title": "Efficient Hybrid Solar Cells Based on Meso-Superstructured Organometal Halide Perovskites",
+  "year": 2012,
+  "url": "https://doi.org/10.1126/science.1228604"
+ },
+ "Metal AM review (DebRoy)": {
+  "title": "Additive manufacturing of metallic components – Process, structure and properties",
+  "year": 2018,
+  "url": "https://doi.org/10.1016/j.pmatsci.2017.10.001"
+ },
+ "Metallic glass (Au–Si)": {
+  "title": "Non-crystalline Structure in Solidified Gold–Silicon Alloys",
+  "year": 1960,
+  "url": "https://doi.org/10.1038/187869b0"
+ },
+ "Metasurface (generalized Snell)": {
+  "title": "Light Propagation with Phase Discontinuities: Generalized Laws of Reflection and Refraction",
+  "year": 2011,
+  "url": "https://doi.org/10.1126/science.1210713"
+ },
+ "Mobile robotic chemist": {
+  "title": "A mobile robotic chemist",
+  "year": 2020,
+  "url": "https://doi.org/10.1038/s41586-020-2442-2"
+ },
+ "MOF water harvesting": {
+  "title": "Water harvesting from air with metal-organic frameworks powered by natural sunlight",
+  "year": 2017,
+  "url": "https://doi.org/10.1126/science.aam8743"
+ },
+ "MOF-5": {
+  "title": "Design and synthesis of an exceptionally stable and highly porous metal-organic framework",
+  "year": 1999,
+  "url": "https://doi.org/10.1038/46248"
+ },
+ "MoS2 HER edges": {
+  "title": "Identification of Active Edge Sites for Electrochemical H2 Evolution from MoS2 Nanocatalysts",
+  "year": 2007,
+  "url": "https://doi.org/10.1126/science.1141483"
+ },
+ "MoS2 transistor": {
+  "title": "Single-layer MoS2 transistors",
+  "year": 2011,
+  "url": "https://doi.org/10.1038/nnano.2010.279"
+ },
+ "Multigait soft robot": {
+  "title": "Multigait soft robot",
+  "year": 2011,
+  "url": "https://doi.org/10.1073/pnas.1116564108"
+ },
+ "MXene (Ti3C2)": {
+  "title": "Two‐Dimensional Nanocrystals Produced by Exfoliation of Ti3 AlC2",
+  "year": 2011,
+  "url": "https://doi.org/10.1002/adma.201102306"
+ },
+ "MXene supercapacitor": {
+  "title": "Cation Intercalation and High Volumetric Capacitance of Two-Dimensional Titanium Carbide",
+  "year": 2013,
+  "url": "https://doi.org/10.1126/science.1241488"
+ },
+ "Na-ion review": {
+  "title": "Research Development on Sodium-Ion Batteries",
+  "year": 2014,
+  "url": "https://doi.org/10.1021/cr500192f"
+ },
+ "Nanocarriers review (Peer)": {
+  "title": "Nanocarriers as an emerging platform for cancer therapy",
+  "year": 2007,
+  "url": "https://doi.org/10.1038/nnano.2007.387"
+ },
+ "Nanoimprint lithography": {
+  "title": "Imprint Lithography with 25-Nanometer Resolution",
+  "year": 1996,
+  "url": "https://doi.org/10.1126/science.272.5258.85"
+ },
+ "Nanotwinned Cu": {
+  "title": "Ultrahigh Strength and High Electrical Conductivity in Copper",
+  "year": 2004,
+  "url": "https://doi.org/10.1126/science.1092905"
+ },
+ "Nanozyme (Fe3O4)": {
+  "title": "Intrinsic peroxidase-like activity of ferromagnetic nanoparticles",
+  "year": 2007,
+  "url": "https://doi.org/10.1038/nnano.2007.260"
+ },
+ "Nd2Fe14B magnet": {
+  "title": "New material for permanent magnets on a base of Nd and Fe (invited)",
+  "year": 1984,
+  "url": "https://doi.org/10.1063/1.333572"
+ },
+ "Negative-index metamaterial": {
+  "title": "Experimental Verification of a Negative Index of Refraction",
+  "year": 2001,
+  "url": "https://doi.org/10.1126/science.1058847"
+ },
+ "NequIP": {
+  "title": "E(3)-equivariant graph neural networks for data-efficient and accurate interatomic potentials",
+  "year": 2022,
+  "url": "https://doi.org/10.1038/s41467-022-29939-5"
+ },
+ "NiFe LDH OER": {
+  "title": "An Advanced Ni–Fe Layered Double Hydroxide Electrocatalyst for Water Oxidation",
+  "year": 2013,
+  "url": "https://doi.org/10.1021/ja4027715"
+ },
+ "Octobot": {
+  "title": "An integrated design and fabrication strategy for entirely soft, autonomous robots",
+  "year": 2016,
+  "url": "https://doi.org/10.1038/nature19100"
+ },
+ "OLED (Tang & VanSlyke)": {
+  "title": "Organic electroluminescent diodes",
+  "year": 1987,
+  "url": "https://doi.org/10.1063/1.98799"
+ },
+ "Oliver–Pharr": {
+  "title": "An improved technique for determining hardness and elastic modulus using load and displacement sensing indentation experiments",
+  "year": 1992,
+  "url": "https://doi.org/10.1557/jmr.1992.1564"
+ },
+ "OQMD": {
+  "title": "Materials Design and Discovery with High-Throughput Density Functional Theory: The Open Quantum Materials Database (OQMD)",
+  "year": 2013,
+  "url": "https://doi.org/10.1007/s11837-013-0755-4"
+ },
+ "PBE": {
+  "title": "Generalized Gradient Approximation Made Simple",
+  "year": 1996,
+  "url": "https://doi.org/10.1103/physrevlett.77.3865"
+ },
+ "Perfect lens": {
+  "title": "Negative Refraction Makes a Perfect Lens",
+  "year": 2000,
+  "url": "https://doi.org/10.1103/physrevlett.85.3966"
+ },
+ "Perovskite LED": {
+  "title": "Bright light-emitting diodes based on organometal halide perovskite",
+  "year": 2014,
+  "url": "https://doi.org/10.1038/nnano.2014.149"
+ },
+ "Perovskite PV (Kojima)": {
+  "title": "Organometal Halide Perovskites as Visible-Light Sensitizers for Photovoltaic Cells",
+  "year": 2009,
+  "url": "https://doi.org/10.1021/ja809598r"
+ },
+ "Phase-field review (Chen)": {
+  "title": "Phase-Field Models for Microstructure Evolution",
+  "year": 2002,
+  "url": "https://doi.org/10.1146/annurev.matsci.32.112001.132041"
+ },
+ "Phonopy": {
+  "title": "First principles phonon calculations in materials science",
+  "year": 2015,
+  "url": "https://doi.org/10.1016/j.scriptamat.2015.07.021"
+ },
+ "Photonic crystal": {
+  "title": "Inhibited Spontaneous Emission in Solid-State Physics and Electronics",
+  "year": 1987,
+  "url": "https://doi.org/10.1103/physrevlett.58.2059"
+ },
+ "Piezoelectric nanogenerator": {
+  "title": "Piezoelectric Nanogenerators Based on Zinc Oxide Nanowire Arrays",
+  "year": 2006,
+  "url": "https://doi.org/10.1126/science.1124005"
+ },
+ "Polydopamine coating": {
+  "title": "Mussel-Inspired Surface Chemistry for Multifunctional Coatings",
+  "year": 2007,
+  "url": "https://doi.org/10.1126/science.1147241"
+ },
+ "Polyethylene upcycling": {
+  "title": "Upcycling Single-Use Polyethylene into High-Quality Liquid Products",
+  "year": 2019,
+  "url": "https://doi.org/10.1021/acscentsci.9b00722"
+ },
+ "Printable high-strength Al": {
+  "title": "3D printing of high-strength aluminium alloys",
+  "year": 2017,
+  "url": "https://doi.org/10.1038/nature23894"
+ },
+ "Pt3Ni(111)": {
+  "title": "Improved Oxygen Reduction Activity on Pt3 Ni(111) via Increased Surface Site Availability",
+  "year": 2007,
+  "url": "https://doi.org/10.1126/science.1135941"
+ },
+ "Pulsed laser deposition": {
+  "title": "Preparation of Y-Ba-Cu oxide superconductor thin films using pulsed laser evaporation from high T c bulk material",
+  "year": 1987,
+  "url": "https://doi.org/10.1063/1.98366"
+ },
+ "Quantum anomalous Hall": {
+  "title": "Experimental Observation of the Quantum Anomalous Hall Effect in a Magnetic Topological Insulator",
+  "year": 2013,
+  "url": "https://doi.org/10.1126/science.1234414"
+ },
+ "Quantum-dot LED": {
+  "title": "Light-emitting diodes made from cadmium selenide nanocrystals and a semiconducting polymer",
+  "year": 1994,
+  "url": "https://doi.org/10.1038/370354a0"
+ },
+ "Raman of graphene (Ferrari)": {
+  "title": "Raman Spectrum of Graphene and Graphene Layers",
+  "year": 2006,
+  "url": "https://doi.org/10.1103/physrevlett.97.187401"
+ },
+ "ReaxFF": {
+  "title": "ReaxFF: A Reactive Force Field for Hydrocarbons",
+  "year": 2001,
+  "url": "https://doi.org/10.1021/jp004368u"
+ },
+ "Rietveld refinement": {
+  "title": "A profile refinement method for nuclear and magnetic structures",
+  "year": 1969,
+  "url": "https://doi.org/10.1107/s0021889869006558"
+ },
+ "SBA-15": {
+  "title": "Triblock Copolymer Syntheses of Mesoporous Silica with Periodic 50 to 300 Angstrom Pores",
+  "year": 1998,
+  "url": "https://doi.org/10.1126/science.279.5350.548"
+ },
+ "Self-healing polymer": {
+  "title": "Autonomic healing of polymer composites",
+  "year": 2001,
+  "url": "https://doi.org/10.1038/35057232"
+ },
+ "SERS (Fleischmann)": {
+  "title": "Raman spectra of pyridine adsorbed at a silver electrode",
+  "year": 1974,
+  "url": "https://doi.org/10.1016/0009-2614(74)85388-1"
+ },
+ "Shockley–Queisser limit": {
+  "title": "Detailed Balance Limit of Efficiency of p-n Junction Solar Cells",
+  "year": 1961,
+  "url": "https://doi.org/10.1063/1.1736034"
+ },
+ "Single-atom Pt1/FeOx": {
+  "title": "Single-atom catalysis of CO oxidation using Pt1/FeOx",
+  "year": 2011,
+  "url": "https://doi.org/10.1038/nchem.1095"
+ },
+ "Single-molecule SERS": {
+  "title": "Probing Single Molecules and Single Nanoparticles by Surface-Enhanced Raman Scattering",
+  "year": 1997,
+  "url": "https://doi.org/10.1126/science.275.5303.1102"
+ },
+ "SISSO": {
+  "title": "SISSO: A compressed-sensing method for identifying the best low-dimensional descriptor in an immensity of offered candidates",
+  "year": 2018,
+  "url": "https://doi.org/10.1103/physrevmaterials.2.083802"
+ },
+ "Skyrmion lattice": {
+  "title": "Skyrmion Lattice in a Chiral Magnet",
+  "year": 2009,
+  "url": "https://doi.org/10.1126/science.1166767"
+ },
+ "SnSe thermoelectric": {
+  "title": "Ultralow thermal conductivity and high thermoelectric figure of merit in SnSe crystals",
+  "year": 2014,
+  "url": "https://doi.org/10.1038/nature13184"
+ },
+ "Sol-gel review (Hench & West)": {
+  "title": "The sol-gel process",
+  "year": 1990,
+  "url": "https://doi.org/10.1021/cr00099a003"
+ },
+ "Solar steam generation": {
+  "title": "Solar steam generation by heat localization",
+  "year": 2014,
+  "url": "https://doi.org/10.1038/ncomms5449"
+ },
+ "Spark plasma sintering": {
+  "title": "The effect of electric field and pressure on the synthesis and consolidation of materials: A review of the spark plasma sintering method",
+  "year": 2006,
+  "url": "https://doi.org/10.1007/s10853-006-6555-2"
+ },
+ "Spin Hall torque (Ta)": {
+  "title": "Spin-Torque Switching with the Giant Spin Hall Effect of Tantalum",
+  "year": 2012,
+  "url": "https://doi.org/10.1126/science.1218197"
+ },
+ "STM": {
+  "title": "Surface Studies by Scanning Tunneling Microscopy",
+  "year": 1982,
+  "url": "https://doi.org/10.1103/physrevlett.49.57"
+ },
+ "Stöber silica": {
+  "title": "Controlled growth of monodisperse silica spheres in the micron size range",
+  "year": 1968,
+  "url": "https://doi.org/10.1016/0021-9797(68)90272-5"
+ },
+ "Supercapacitor review": {
+  "title": "Materials for electrochemical capacitors",
+  "year": 2008,
+  "url": "https://doi.org/10.1038/nmat2297"
+ },
+ "TADF": {
+  "title": "Highly efficient organic light-emitting diodes from delayed fluorescence",
+  "year": 2012,
+  "url": "https://doi.org/10.1038/nature11687"
+ },
+ "Tauc plot": {
+  "title": "Optical Properties and Electronic Structure of Amorphous Germanium",
+  "year": 1966,
+  "url": "https://doi.org/10.1002/pssb.19660150224"
+ },
+ "TDTR": {
+  "title": "Analysis of heat flow in layered structures for time-domain thermoreflectance",
+  "year": 2004,
+  "url": "https://doi.org/10.1063/1.1819431"
+ },
+ "Topological insulator (Bi1-xSbx)": {
+  "title": "A topological Dirac insulator in a quantum spin Hall phase",
+  "year": 2008,
+  "url": "https://doi.org/10.1038/nature06843"
+ },
+ "Tough adhesive": {
+  "title": "Tough adhesives for diverse wet surfaces",
+  "year": 2017,
+  "url": "https://doi.org/10.1126/science.aah6362"
+ },
+ "Transient electronics": {
+  "title": "A Physically Transient Form of Silicon Electronics",
+  "year": 2012,
+  "url": "https://doi.org/10.1126/science.1226325"
+ },
+ "Triboelectric nanogenerator": {
+  "title": "Flexible triboelectric generator",
+  "year": 2012,
+  "url": "https://doi.org/10.1016/j.nanoen.2012.01.004"
+ },
+ "Turkevich gold": {
+  "title": "A study of the nucleation and growth processes in the synthesis of colloidal gold",
+  "year": 1951,
+  "url": "https://doi.org/10.1039/df9511100055"
+ },
+ "Two-photon lithography": {
+  "title": "Finer features for functional microdevices",
+  "year": 2001,
+  "url": "https://doi.org/10.1038/35089130"
+ },
+ "Ultralight mechanical metamaterial": {
+  "title": "Ultralight, ultrastiff mechanical metamaterials",
+  "year": 2014,
+  "url": "https://doi.org/10.1126/science.1252291"
+ },
+ "USPEX": {
+  "title": "Crystal structure prediction using ab initio evolutionary techniques: Principles and applications",
+  "year": 2006,
+  "url": "https://doi.org/10.1063/1.2210932"
+ },
+ "VASP": {
+  "title": "Efficient iterative schemes for ab initio total-energy calculations using a plane-wave basis set",
+  "year": 1996,
+  "url": "https://doi.org/10.1103/physrevb.54.11169"
+ },
+ "Vitrimer": {
+  "title": "Silica-Like Malleable Materials from Permanent Organic Networks",
+  "year": 2011,
+  "url": "https://doi.org/10.1126/science.1212648"
+ },
+ "Wannier functions review": {
+  "title": "Maximally localized Wannier functions: Theory and applications",
+  "year": 2012,
+  "url": "https://doi.org/10.1103/revmodphys.84.1419"
+ },
+ "Water-in-salt": {
+  "title": "“Water-in-salt” electrolyte enables high-voltage aqueous lithium-ion chemistries",
+  "year": 2015,
+  "url": "https://doi.org/10.1126/science.aab1595"
+ },
+ "Wearable sweat sensor": {
+  "title": "Fully integrated wearable sensor arrays for multiplexed in situ perspiration analysis",
+  "year": 2016,
+  "url": "https://doi.org/10.1038/nature16521"
+ },
+ "Weyl semimetal TaAs": {
+  "title": "Discovery of a Weyl fermion semimetal and topological Fermi arcs",
+  "year": 2015,
+  "url": "https://doi.org/10.1126/science.aaa9297"
+ },
+ "Word embeddings (Tshitoyan)": {
+  "title": "Unsupervised word embeddings capture latent knowledge from materials science literature",
+  "year": 2019,
+  "url": "https://doi.org/10.1038/s41586-019-1335-8"
+ },
+ "Y6 acceptor": {
+  "title": "Single-Junction Organic Solar Cell with over 15% Efficiency Using Fused-Ring Acceptor with Electron-Deficient Core",
+  "year": 2019,
+  "url": "https://doi.org/10.1016/j.joule.2019.01.004"
+ },
+ "ZIF-8": {
+  "title": "Exceptional chemical and thermal stability of zeolitic imidazolate frameworks",
+  "year": 2006,
+  "url": "https://doi.org/10.1073/pnas.0602439103"
+ }
+}
