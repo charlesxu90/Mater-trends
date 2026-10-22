@@ -132,6 +132,7 @@ Pattern: `https://rss.sciencedirect.com/publication/science/<ISSN-no-hyphens>`. 
 |--------|---------|-----|-----------|-----------|---------|-------|--------|
 | Elsevier | Progress in Polymer Science | prog-polym-sci | journal | monthly | https://rss.sciencedirect.com/publication/science/00796700 | high | ? |
 | Elsevier | Materials Today | mater-today | journal | monthly | https://rss.sciencedirect.com/publication/science/13697021 | high | ? |
+| Elsevier | Bioactive Materials | bioact-mater | journal | monthly | https://rss.sciencedirect.com/publication/science/2452199X | high | ✓ |
 | Elsevier | Nano Energy | nano-energy | journal | continuous | https://rss.sciencedirect.com/publication/science/22112855 | high | ? |
 | Elsevier | Acta Materialia | acta-mater | journal | continuous | https://rss.sciencedirect.com/publication/science/13596454 | high | ? |
 | Elsevier | Polymer | polymer | journal | continuous | https://rss.sciencedirect.com/publication/science/00323861 | high | ? |

@@ -310,6 +310,22 @@
       ]
     },
     {
+      "key": "bioact-mater",
+      "label": "Bioactive Materials",
+      "family": "Elsevier",
+      "impact_factor": 18.0,
+      "frequency": "monthly",
+      "openalex": "S2898508902",
+      "issn": "2452-199X",
+      "feeds": [
+        {
+          "url": "https://rss.sciencedirect.com/publication/science/2452199X",
+          "type": "journal",
+          "focus": "high"
+        }
+      ]
+    },
+    {
       "key": "matter",
       "label": "Matter",
       "family": "Cell Press",
